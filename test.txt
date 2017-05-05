@@ -1,1 +1,1 @@
-Testing git commits. Test 2. Test 3 - in sublime.
+Testing git commits. Test 2. Test 3 - in sublime. Test 4 (looking for credentials)
