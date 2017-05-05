@@ -28,6 +28,6 @@ A playground used in several freeCodeCamp challenges teaching about how to use v
 
 <em>Completed May 03, 2017</em>
 
-Simple starting project. Many things were changed throughout the creation of this; lines were deleted or replaced multiple times. Teachings of responsive design were made and the basic foundations of html, css, and bootstrap were taught in this lesson/project. (Best viewed at low resolutions)
+Simple starting project. Many things were changed throughout the creation of this; lines were deleted or replaced multiple times. Teachings of responsive design were made as well as the basic foundations of html, css, and bootstrap were taught in this lesson/project. This was made to fit the size of a fairly small screen-sized phone. Best viewed at lower resolutions; all content scales with size, using the portrait-based editor layout on codepen.io will allow the use of a slider to see how the content reacts when space is lowered.
 
 <img src="https://raw.githubusercontent.com/Squibs/freeCodeCamp/master/Images/icon-html5.png" height="60" alt="HTML5 Icon"><img src="https://raw.githubusercontent.com/Squibs/freeCodeCamp/master/Images/icon-css3.png" height="60" alt="CSS3 Icon"><img src="https://raw.githubusercontent.com/Squibs/freeCodeCamp/master/Images/icon-bootstrap.png" height="60" alt="Bootstrap Icon">
