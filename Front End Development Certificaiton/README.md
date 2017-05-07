@@ -2,7 +2,7 @@
 ## Front End Development Certification
 
 ### Tribute Page
-<a href="https://codepen.io/Sulph/full/XRavGG/"><img src="https://raw.githubusercontent.com/Squibs/freeCodeCamp/master/Images/screenshot-tribute-page.jpg" height="400" alt="Screenshot of John M. Keynes tribute page."></a>
+<a href="https://codepen.io/Sulph/full/XRavGG/"><img src="https://raw.githubusercontent.com/Squibs/freeCodeCamp/master/Images/screenshot-tribute-page.png" height="400" alt="Screenshot of John M. Keynes tribute page."></a>
 
 <em>Completed May 05, 2017</em>
 
