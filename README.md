@@ -11,10 +11,10 @@ The solutions I have created while going through the project challenges at https
 
 ### Back End Development Certification
 
-<a href="#"><img src="https://raw.githubusercontent.com/Squibs/freeCodeCamp/master/Images/image-coming-soon.jpg" height="400" alt="cat photo"></a>
+<a href="#"><img src="https://raw.githubusercontent.com/Squibs/freeCodeCamp/master/Images/image-coming-soon.png" height="400" alt="cat photo"></a>
 
 ---
 
 ### Data Visualization Certification
 
-<a href="#"><img src="https://raw.githubusercontent.com/Squibs/freeCodeCamp/master/Images/image-coming-soon.jpg" height="400" alt="cat photo"></a>
+<a href="#"><img src="https://raw.githubusercontent.com/Squibs/freeCodeCamp/master/Images/image-coming-soon.png" height="400" alt="cat photo"></a>
