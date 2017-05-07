@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8">
+
+		<title>Personal Portfolio</title>
+
+		<!-- further meta tags go here -->
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.0.0-alpha.6/css/bootstrap.min.css"/>
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/7.0.0/normalize.css"/>
+		<link rel="stylesheet" type="text/css" href="main.css"/>
+
+	</head>
+
+	<body>
+		<nav class="navbar fixed-top navbar-toggleable-sm navbar-light"> <!--#DBF1FF-->
+			<!-- button for navbar collapse at medium breakpoint -->
+			<button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+				<span class="navbar-toggler-icon"></span>
+			</button>
+
+			<!-- navbar items -->
+			<a class="navbar-brand" href="#">ZACHARY HOLMAN</a>
+			<div class="collapse navbar-collapse" id="navbarNav">
+				<div class="navbar-nav">
+					<a class="nav-item nav-link" href="#">Home</a>
+					<a class="nav-item nav-link" href="#About">About Me</a>
+					<a class="nav-item nav-link" href="#Projects">Projects</a>
+					<a class="nav-item nav-link" href="#Contact">Contact Me</a>
+				</div>
+			</div>
+		</nav>
+
+		<header>
+			<div class="home">
+				<h1>Zachary Holman</h1>
+				<h2>Aspiring Full-stack Developer</h2>
+			</div>
+		</header>
+
+		<div class="container-fluid">
+			<div class="row">
+				<div class="about col-sm-12" id="About">
+					<h3>About Me</h3>
+					<p>
+						Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque vulputate mauris eget lectus blandit mattis. In mollis turpis at sodales fringilla. Quisque vitae mi non ipsum ornare cursus eget sed tortor. Morbi pretium feugiat scelerisque. Mauris aliquam id lorem ac tristique. Vivamus lorem orci, finibus vitae odio eu, aliquet venenatis ligula. Nunc cursus dolor eget nisl imperdiet blandit. Phasellus tincidunt dui ex, condimentum fringilla mauris porttitor vitae. Fusce porttitor sapien odio, convallis pellentesque est rutrum at. Nulla mi ante, posuere vel blandit in, suscipit sit amet tellus. Nam eu nibh velit. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae;
+					</p>
+					<p>
+						Praesent quis pulvinar odio. Vestibulum tincidunt ante vel enim consequat ullamcorper. Ut sollicitudin, ipsum eu suscipit lacinia, nulla turpis mattis nulla, a tincidunt felis sapien a nisi. Etiam non cursus diam, quis sagittis turpis. Fusce faucibus nisl turpis, a hendrerit massa sagittis quis. Aenean lacinia eu libero et hendrerit. Sed id ligula tellus. Mauris tristique ornare ipsum vel scelerisque. Etiam faucibus ligula tempor tortor pretium feugiat. Nulla sit amet justo augue. Nulla eleifend, augue auctor tempus ornare, mi massa blandit neque, quis aliquet augue lacus at quam. Nam sed quam tellus. Interdum et malesuada fames ac ante ipsum primis in faucibus. Nam volutpat elit non libero lacinia mollis. Nullam blandit, ante a tempus gravida, urna nunc vulputate erat, vitae fringilla mauris tellus posuere velit.
+					</p>
+					<p>
+						Fusce condimentum tortor ut volutpat placerat. Ut malesuada ultrices nisi nec gravida. Curabitur lobortis lectus vitae libero semper, sodales tincidunt ligula ullamcorper. Aliquam faucibus, ligula ut ultricies egestas, sapien sapien aliquet ipsum, non mattis risus nisl ac diam. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse hendrerit tempus neque, eget rutrum nisl egestas eu. Curabitur vel blandit libero. Nunc accumsan nulla sed libero lacinia, sed tempor quam tincidunt. Ut volutpat tempor sem, semper gravida ex lobortis eget. Aenean nisi massa, lacinia sit amet consequat ac, dapibus id odio. Curabitur ornare purus vitae erat ultricies tempus. Nullam dictum accumsan posuere. Fusce in malesuada nisl.
+					</p>
+					<p>
+						Etiam feugiat, lacus quis luctus iaculis, elit erat tempus enim, sit amet ultricies lorem mauris eget libero. Vivamus rhoncus vel enim eget tempus. Morbi tortor sapien, congue in urna eu, feugiat tincidunt mauris. Nam at elit auctor, pulvinar sem vitae, rhoncus nunc. Proin egestas egestas tellus, eget placerat augue luctus sed. Praesent magna massa, auctor eget posuere ornare, pharetra eu arcu. Integer consequat nisl eget porta dignissim. Morbi nec ex ac mi malesuada auctor scelerisque ac lectus. Sed facilisis tellus a sagittis malesuada. In justo lectus, tristique sit amet egestas eget, ultricies pulvinar turpis. Sed feugiat, erat quis hendrerit finibus, diam dui ornare ipsum, non sagittis risus turpis ac lacus. Vivamus id augue neque. Ut eget cursus urna. Vestibulum fringilla, metus porttitor egestas ultrices, urna elit ultrices tortor, sit amet convallis erat enim eleifend sem. Mauris vitae consectetur lectus, in condimentum tellus.
+					</p>
+				</div>
+
+				<div class="projects col-sm-12" id="Projects">
+					<h3>Projects</h3>
+
+					<!-- Card Deck - Use image size 960x640 -->
+					<div class="card-deck">
+
+						<!-- Card One -->
+						<div class="card mb-4">
+							<img class="card-img-top img-fluid" src="https://raw.githubusercontent.com/Squibs/freeCodeCamp/master/Images/screenshot-tribute-page-block.png" alt="Card image cap">
+							<div class="card-block">
+								<h4 class="card-title">Tribute Page</h4>
+								<p class="card-text">The first basic front end development project introduced. I made a tribute page to John M. Keynes a 20th century British economist. This was the first project that did not give any step-by-step directions and instead let the learner go off of just an example as a end-goal. I used some Bootstrap 4.0.0 alpha classes in this project; mainly a 'Card' for the image, as they removed thumbnails in this version of Bootstrap.</p>
+							</div>
+							<div class="card-footer">
+								<small>Last updated 3 mins ago</small>
+							</div>
+						</div>
+						<span></span>
+
+						<!-- Card Two -->
+						<div class="card mb-4">
+							<img class="card-img-top img-fluid" src="https://raw.githubusercontent.com/Squibs/freeCodeCamp/master/Images/screenshot-jquery-playground-block.png" alt="Card image cap">
+							<div class="card-block">
+								<h4 class="card-title">Card title</h4>
+								<p class="card-text">This card has supporting text below as a natural lead-in to additional content.</p>
+							</div>
+							<div class="card-footer">
+								<small>Last updated 3 mins ago</small>
+							</div>
+						</div>
+						<span></span>
+						
+						<!-- Card Three -->
+						<div class="card mb-4">
+							<img class="card-img-top img-fluid" src="https://raw.githubusercontent.com/Squibs/freeCodeCamp/master/Images/screenshot-cat-photo-app-block.png" alt="Card image cap">
+							<div class="card-block">
+								<h4 class="card-title">Card title</h4>
+								<p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This card has even longer content than the first to show that equal height action.</p>
+							</div>
+							<div class="card-footer">
+								<small>Last updated 3 mins ago</small>
+							</div>
+						</div>
+						<span></span>
+						
+						<!-- Card Four -->
+						<div class="card mb-4">
+							<img class="card-img-top img-fluid" src="https://raw.githubusercontent.com/Squibs/freeCodeCamp/master/Images/image-coming-soon.jpg" alt="Card image cap">
+							<div class="card-block">
+								<h4 class="card-title">Card title</h4>
+								<p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This card has even longer content than the first to show that equal height action.</p>
+							</div>
+							<div class="card-footer">
+								<small>Last updated 3 mins ago</small>
+							</div>
+						</div>
+						<span></span>
+							
+						<!-- Card Five -->
+						<div class="card mb-4">
+							<img class="card-img-top img-fluid" src="https://raw.githubusercontent.com/Squibs/freeCodeCamp/master/Images/image-coming-soon.jpg" alt="Card image cap">
+							<div class="card-block">
+								<h4 class="card-title">Card title</h4>
+								<p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This card has even longer content than the first to show that equal height action.</p>
+							</div>
+							<div class="card-footer">
+								<small>Last updated 3 mins ago</small>
+							</div>
+						</div>
+						<span></span>
+						
+						<!-- Card Six -->
+						<div class="card mb-4">
+							<img class="card-img-top img-fluid" src="https://raw.githubusercontent.com/Squibs/freeCodeCamp/master/Images/image-coming-soon.jpg" alt="Card image cap">
+							<div class="card-block">
+								<h4 class="card-title">Card title</h4>
+								<p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This card has even longer content than the first to show that equal height action.</p>
+							</div>
+							<div class="card-footer">
+								<small>Last updated 3 mins ago</small>
+							</div>
+						</div>
+						<span></span>
+
+						<!-- Card Seven -->
+						<div class="card mb-4">
+							<img class="card-img-top img-fluid" src="https://raw.githubusercontent.com/Squibs/freeCodeCamp/master/Images/image-coming-soon.jpg" alt="Card image cap">
+							<div class="card-block">
+								<h4 class="card-title">Card title</h4>
+								<p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This card has even longer content than the first to show that equal height action.</p>
+							</div>
+							<div class="card-footer">
+								<small>Last updated 3 mins ago</small>
+							</div>
+						</div>
+						<span></span>
+
+						<!-- Card Eight -->
+						<div class="card mb-4">
+							<img class="card-img-top img-fluid" src="https://raw.githubusercontent.com/Squibs/freeCodeCamp/master/Images/image-coming-soon.jpg" alt="Card image cap">
+							<div class="card-block">
+								<h4 class="card-title">Card title</h4>
+								<p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This card has even longer content than the first to show that equal height action.</p>
+							</div>
+							<div class="card-footer">
+								<small>Last updated 3 mins ago</small>
+							</div>
+						</div>
+						<span></span>
+
+						<!-- Card Nine -->
+						<div class="card mb-4">
+							<img class="card-img-top img-fluid" src="https://raw.githubusercontent.com/Squibs/freeCodeCamp/master/Images/image-coming-soon.jpg" alt="Card image cap">
+							<div class="card-block">
+								<h4 class="card-title">Card title</h4>
+								<p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This card has even longer content than the first to show that equal height action.</p>
+							</div>
+							<div class="card-footer">
+								<small>Last updated 3 mins ago</small>
+							</div>
+						</div>
+						<span></span>
+
+					</div>
+				</div>
+
+				<div class="contact col-sm-12" id="Contact">
+					<h3>Contact Me</h3>
+					<p>
+						Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque vulputate mauris eget lectus blandit mattis. In mollis turpis at sodales fringilla. Quisque vitae mi non ipsum ornare cursus eget sed tortor. Morbi pretium feugiat scelerisque. Mauris aliquam id lorem ac tristique. Vivamus lorem orci, finibus vitae odio eu, aliquet venenatis ligula. Nunc cursus dolor eget nisl imperdiet blandit. Phasellus tincidunt dui ex, condimentum fringilla mauris porttitor vitae. Fusce porttitor sapien odio, convallis pellentesque est rutrum at. Nulla mi ante, posuere vel blandit in, suscipit sit amet tellus. Nam eu nibh velit. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae;
+					</p>
+					<p>
+						Praesent quis pulvinar odio. Vestibulum tincidunt ante vel enim consequat ullamcorper. Ut sollicitudin, ipsum eu suscipit lacinia, nulla turpis mattis nulla, a tincidunt felis sapien a nisi. Etiam non cursus diam, quis sagittis turpis. Fusce faucibus nisl turpis, a hendrerit massa sagittis quis. Aenean lacinia eu libero et hendrerit. Sed id ligula tellus. Mauris tristique ornare ipsum vel scelerisque. Etiam faucibus ligula tempor tortor pretium feugiat. Nulla sit amet justo augue. Nulla eleifend, augue auctor tempus ornare, mi massa blandit neque, quis aliquet augue lacus at quam. Nam sed quam tellus. Interdum et malesuada fames ac ante ipsum primis in faucibus. Nam volutpat elit non libero lacinia mollis. Nullam blandit, ante a tempus gravida, urna nunc vulputate erat, vitae fringilla mauris tellus posuere velit.
+					</p>
+				</div>
+			</div>
+		</div>
+
+		<!-- load jquery before bootstrap -->
+		<script src="jquery-3.2.1.min.js"></script>
+		<script src="tether.min.js"></script>
+		<script src="bootstrap.min.js"></script>
+	</body>
+
+	<footer>
+		<h5>&copy; 2017 Zachary Holman</h5>
+		<p>Created for the <a href="https://www.freecodecamp.com/">freeCodeCamp</a> portfolio challenge. Background-image by <a href="http://jovicasmileski.deviantart.com/art/Flat-Landscape-Winter-Edition-576667116">"Jovica Smileski."</a></p>
+	</footer>
+
+	<!--
+	TODO:
+		* Section, Article tags
+		* Possible parallax background
+	-->
+
+</html>

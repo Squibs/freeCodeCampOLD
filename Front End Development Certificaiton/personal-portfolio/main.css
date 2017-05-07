@@ -1,0 +1,234 @@
+/*
+	=============================
+	Body / Custom Styles
+	=============================
+*/
+body {
+	background-color: #165F88;
+	background-image: url("https://cdn.rawgit.com/Squibs/freeCodeCamp/79ab8ae5/Images/vector-lighthouse.svg");
+	background-repeat: no-repeat;
+	background-position: center calc(50% - 6em);
+	background-attachment: fixed;
+	background-size: cover;
+	padding-top: 6em;
+	height: 100%;
+}
+/*
+	=============================
+	Navbar
+	=============================
+*/
+nav {
+	background-color: #DAF1FF; /* F2F2F2 */
+}
+
+/*
+	=============================
+	Home / Header
+	=============================
+*/
+.home {
+	text-align: center;
+	position: relative;
+	top: 10vh;
+	text-shadow: 0 0 0.45em black;
+	color: white;
+	z-index: 10000;
+}
+
+h1 {
+	font-size: 4em;
+	font-weight: 300;
+	line-height: 2ex;
+	letter-spacing: 0.03em;
+}
+
+h2 {
+	text-transform: uppercase;
+	font-weight: 300;
+}
+
+/*
+	=============================
+	About
+	=============================
+*/
+.about {
+	background-color: #165F88;
+	box-shadow: 0 -7px 10px -5px #333;
+	padding: 7em 20% 5em 20%;
+	position: relative;
+}
+
+/*
+	=============================
+	Projects
+	=============================
+*/
+.projects {
+	background-color: #2581B2;
+	box-shadow: 0 -7px 10px -5px #333;
+	padding: 7em 20% 5em 20%;
+}
+
+/*
+	=============================
+	Contact
+	=============================
+*/
+.contact {
+	background-color: #3696C9;
+	box-shadow: 0 -7px 10px -5px #333;
+	padding: 7em 20% 5em 20%;
+}
+
+/*
+	=============================
+	Footer
+	=============================
+*/
+footer {
+	background-color: #54AAD9;
+	padding: 0.25em 5% 0.25em 5%;
+	box-shadow: 0 -7px 10px -5px #333;
+	text-align: center;
+	position: relative;
+}
+
+h5 {
+	font-size: 1.20em;
+}
+
+/*
+	=============================
+	Cards
+	=============================
+*/
+.card>* {
+	border-radius: 0;
+}
+
+.date {
+	vertical-align: bottom;
+}
+
+.card {
+	border: 0;
+	box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+  	transition: all 0.3s cubic-bezier(.25,.8,.25,1);
+}
+
+.card:hover {
+	box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
+}
+
+.card-img-top {
+	width: 100%;
+	height: auto;
+}
+
+.card-title {
+	padding-bottom: 0.75em;
+	border-bottom: 1px solid #E5E5E5;
+}
+
+.finished {
+	text-align: right;
+}
+
+.card-footer {
+	background-color: #5B5B5B;
+	color: #fff;
+}
+
+.card-deck {
+	margin: 1em -2.25em 0 -1.5em;
+}
+
+.card-deck span {
+	display: none;
+}
+
+.card-deck .card {
+	margin-left: 15px;
+	margin-right: 15px;
+}
+
+.card-deck .card:not(:last-child) {
+	margin-right: 15px;
+}
+
+.card-deck .card:not(:first-child) {
+	margin-left: 15px;
+}
+
+/*
+	=============================
+	Mobile Device Fixes
+	=============================
+*/
+@media screen and (min-width: 1px) and (max-width: 359px) {
+	.about {
+		margin-top: 28vh; /* 28vh */
+	}
+
+    .card-deck span:nth-of-type(1n) {
+      display: block;
+      width: 100%;
+    }	
+}
+
+@media screen and (min-width: 360px) and (max-width: 599px) {
+	.about {
+		margin-top: 38vh; /* 38vh */
+	}
+
+    .card-deck span:nth-of-type(1n) {
+      display: block;
+      width: 100%;
+    }		
+}
+
+@media screen and (min-width: 600px) and (max-width: 899px) {
+	.about {
+		margin-top: 70vh; /* 70vh */
+	}
+
+    .card-deck span:nth-of-type(1n) {
+      display: block;
+      width: 100%;
+    }	
+}
+
+@media screen and (min-width: 900px) and (max-width: 1199px) {
+	.about {
+		margin-top: 72vh; /* 72vh */
+	}
+
+    .card-deck span:nth-of-type(2n) {
+      display: block;
+      width: 100%;
+    }	
+}
+
+@media screen and (min-width: 1200px) and (max-width: 1799px) {
+	.about {
+		margin-top: 62vh; /* 62 */
+	}
+
+    .card-deck span:nth-of-type(3n) {
+      display: block;
+      width: 100%;
+    }	
+}
+
+@media screen and (min-width: 1800px) {
+	.about {
+		margin-top: 66vh; /* 66vh */
+	}
+
+    .card-deck span:nth-of-type(3n) {
+      display: block;
+      width: 100%;
+    }	
+}
