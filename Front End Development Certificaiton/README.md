@@ -2,7 +2,7 @@
 ## Front End Development Certification
 
 ### Tribute Page
-<a href="https://codepen.io/Sulph/full/XRavGG/"><img src="https://raw.githubusercontent.com/Squibs/freeCodeCamp/master/Images/screenshot-tribute-page.png" height="400" alt="Screenshot of John M. Keynes tribute page." target="_blank"></a>
+<a href="https://codepen.io/Sulph/full/XRavGG/" target="_blank"><img src="https://raw.githubusercontent.com/Squibs/freeCodeCamp/master/Images/screenshot-tribute-page.png" height="400" alt="Screenshot of John M. Keynes tribute page."></a>
 
 <em>Completed May 05, 2017</em>
 
@@ -13,7 +13,7 @@ The first basic front end development project introduced. I made a tribute page 
 ---
 
 ### jQuery Playground
-<a href="https://github.com/Squibs/freeCodeCamp/tree/master/Front%20End%20Development%20Certificaiton/jquery-playground"><img src="https://raw.githubusercontent.com/Squibs/freeCodeCamp/master/Images/screenshot-jquery-playground.png" height="400" alt="Screenshot of jQuery Playground html and jQuery source code."></a>
+<a href="https://github.com/Squibs/freeCodeCamp/tree/master/Front%20End%20Development%20Certificaiton/jquery-playground" target="_blank"><img src="https://raw.githubusercontent.com/Squibs/freeCodeCamp/master/Images/screenshot-jquery-playground.png" height="400" alt="Screenshot of jQuery Playground html and jQuery source code."></a>
 
 <em>Completed May 04, 2017</em>
 
@@ -24,7 +24,7 @@ A playground used in several freeCodeCamp challenges teaching about how to use v
 ---
 
 ### Cat Photo App
-<a href="https://codepen.io/Sulph/pen/qmPGwq"><img src="https://raw.githubusercontent.com/Squibs/freeCodeCamp/master/Images/screenshot-cat-photo-app.png" height="400" alt="Screenshot of a cat photo app built with html"></a>
+<a href="https://codepen.io/Sulph/pen/qmPGwq" target="_blank"><img src="https://raw.githubusercontent.com/Squibs/freeCodeCamp/master/Images/screenshot-cat-photo-app.png" height="400" alt="Screenshot of a cat photo app built with html"></a>
 
 <em>Completed May 03, 2017</em>
 
