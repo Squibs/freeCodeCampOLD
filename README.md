@@ -5,7 +5,7 @@ The solutions I have created while going through the project challenges at https
 
 ### Front End Development Certification
 
-<a href="https://github.com/Squibs/freeCodeCamp/tree/master/Front%20End%20Development%20Certificaiton#freecodecamp"><img src="https://raw.githubusercontent.com/Squibs/freeCodeCamp/master/Images/image-front-end.png" height="400" alt="flat image of front end web design"></a>
+<a href="https://github.com/Squibs/freeCodeCamp/tree/master/Front%20End%20Development%20Certification#freecodecamp"><img src="https://raw.githubusercontent.com/Squibs/freeCodeCamp/master/Images/image-front-end.png" height="400" alt="flat image of front end web design"></a>
 
 ---
 
