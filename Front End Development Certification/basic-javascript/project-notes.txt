@@ -6,7 +6,30 @@ Arrays:
 
 Local Variables take precedence over Global Variables
 
-JavaScript Examples:
+If statement conditions can be considered boolean conditions.
+	function ourTrueOrFalse(isItTrue) {
+		if (isItTrue) { return "Yes, it's true"; } 
+		return "No, it's false";
+		}
+	ourTrueOrFalse(true);
+
+	The variable ourTrueOrFalse is set to true so when it is passed to the function it will trigger the return for "Yes, it's true".
+	If statements just need to be true or false; so running a variable, set to true or false, through an if statment with the argument of just that variable 
+		will determine the action based on the variable boolean value
+
+In order for JavaScript to compare two different data types (for example, numbers and strings), it must convert one type to another. Once it does, however, it can compare terms as follows:
+	1   ==  1    // true
+	1   ==  2    // false
+	1   == '1'   // true
+	"3"  ==  3    // true
+
+The strict equality (===) operator is similar to the equality operator (==) only the strict equality operator also compares the data type of the variables being compared.
+	1 === 1 // true
+	2 === '2' // false
+
+the logical or operator (||) returns true if either of the operands is true, otherwise it returns false.
+
+Random JavaScript examples I believe I learned from:
 	-------------------------
 	Stand in Line
 	-------------------------
