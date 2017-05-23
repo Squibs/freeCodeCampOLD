@@ -17,7 +17,7 @@ The first basic front end development project introduced. I made a tribute page 
 
 <em>Completed May 04, 2017</em>
 
-A playground used in several freeCodeCamp challenges teaching about how to use various jQuery commands. View project-notes.txt for notes on various commands used that can be used with this.
+A playground used in several freeCodeCamp challenges teaching about how to use various jQuery commands. While this is not very much of a project to show off, I believe it is a good thing to recognize a simple project that allows you to test the many functions of jQuery. View project-notes.txt for notes on various commands that can be used with this.
 
 <img src="https://raw.githubusercontent.com/Squibs/freeCodeCamp/master/Images/icon-jquery.png" height="60" alt="jQuery Icon"><img src="https://raw.githubusercontent.com/Squibs/freeCodeCamp/master/Images/icon-javascript.png" height="50" alt="JavaScript Icon">
 

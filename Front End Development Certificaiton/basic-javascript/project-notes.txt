@@ -1,0 +1,29 @@
+Arrays:
+	.unshift()	add to start of array
+	.push()		add to end of array
+	.shift()	remove from start of array and store value
+	.pop()		remove end of array and store value
+
+Local Variables take precedence over Global Variables
+
+JavaScript Examples:
+-------------------------
+Stand in Line
+-------------------------
+Function takes two arguments, an array and a number. 
+Puts the number at the end of the array and removes the first element of the array and returns that value
+-------------------------
+	function nextInLine(arr, item) {
+	  // Your code here
+	  arr.push(item);
+	  item = arr.shift();
+	  return item;  // Change this line
+	}
+
+	// Test Setup
+	var testArr = [1,2,3,4,5];
+
+	// Display Code
+	console.log("Before: " + JSON.stringify(testArr));
+	console.log(nextInLine(testArr, 6)); // Modify this line to test
+	console.log("After: " + JSON.stringify(testArr));
