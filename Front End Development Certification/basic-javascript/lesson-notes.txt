@@ -1,3 +1,5 @@
+Basic JavaScript Lessons:
+
 Arrays:
 	.unshift()	add to start of array
 	.push()		add to end of array
@@ -77,10 +79,14 @@ Regular Expressions
 	For example, if we wanted to find the word the in the string "The dog chased the cat", we could use the following regular expression: /the/gi
 		List of Selectors:
 			/ 	start and end of the regular expression
+
 			g 	means global which will return all matches in the string and not just the first one
+
 			i 	means that we want to ignore the casing of letters when searching
+
 			\d 	retrieves one digit (e.g.) numbers 0 to 9 in a string
 				/\d/g 	retrieves one digits in a string
+				
 			+	allows for matches of one or more digits
 				/\d+/g 	retrives one or more digits in a string
 					// Setup
@@ -89,7 +95,9 @@ Regular Expressions
 					var expression = /\d+/g;  
 
 					var digitCount = testString.match(expression).length; // digitCount is set to 2; as there were two matches	
+
 			\s 	use to find whitespace in a string (whitespace characters are " "(space), \r (carriage return), \n(newline), \t(tab), and \f(form feed))
+
 	Invert any match by using the uppercase version of the regular expression selector
 		for example: \s will match any whitespace while \S will match anything that isn't whitespace
 			var testString = "How many non-space characters are there in this sentence?";
