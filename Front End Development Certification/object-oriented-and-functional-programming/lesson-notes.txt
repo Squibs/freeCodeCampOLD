@@ -61,7 +61,7 @@ Useful array methods:
 		  return b - a; 
 		}); 
 
-		// sorts from larget to smallest use a - b for smallest to largest; if no compare (callback) function is passed in it will convert the values to strings and sort alphabetically.
+		// b-a sorts from larget to smallest ... use a - b for smallest to largest; if no compare (callback) function is passed in it will convert the values to strings and sort alphabetically.
 
 
 	The reverse() method is used to reverse the elements in an array:
