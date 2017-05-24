@@ -75,7 +75,7 @@ JSON:
 Use Math.random(); to create a random decimal between 0 and 1.
 	return Math.floor(Math.random() * 10); //returns number between 0 and 9
 
-Regular Expressions
+Regular Expressions (regex)
 	For example, if we wanted to find the word the in the string "The dog chased the cat", we could use the following regular expression: /the/gi
 		List of Selectors:
 			/ 	start and end of the regular expression
