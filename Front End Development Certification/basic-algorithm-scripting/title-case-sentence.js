@@ -24,7 +24,7 @@ function titleCase(str) {
 
 	console.log("Capitalize chars after a whitespace:   		\"" + str + "\"\n");
 
-  return str;
+	return str;
 }
 
 titleCase("I'm a little tea pot"); // should return "I'm A Little Tea Pot"
@@ -49,9 +49,5 @@ titleCase("HERE IS MY HANDLE HERE IS MY SPOUT");
 
 	  return str;
 	}
-
-	titleCase("I'm a little tea pot");
-	titleCase("sHoRt AnD sToUt");
-	titleCase("HERE IS MY HANDLE HERE IS MY SPOUT");
 
 */

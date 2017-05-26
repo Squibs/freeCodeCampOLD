@@ -43,10 +43,4 @@ factorialize(1);
 		}
 	}
 
-	factorialize(5);
-	factorialize(10);
-	factorialize(20);
-	factorialize(0);
-	factorialize(3);
-
 */

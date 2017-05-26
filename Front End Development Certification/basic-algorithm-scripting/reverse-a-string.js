@@ -33,9 +33,5 @@ reverseString("Greetings from Earth");
 		str = str.join('');
 		return str;
 	}
-
-	reverseString("hello");
-	reverseString("Howdy");
-	reverseString("Greetings from Earth");
 	
 */

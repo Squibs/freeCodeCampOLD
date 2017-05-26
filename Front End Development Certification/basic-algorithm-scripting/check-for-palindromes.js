@@ -45,26 +45,9 @@ palindrome("five|\_/|four"); //false
 		str = str.toLowerCase().replace(/\s|[-!$%^&*()_+|~=`{}\[\]:";'<>?,.\/]/g, '');
 
 		for (i = 0; i < str.length; i++) {
-
-			if (str[i] == str[str.length - 1 - i]) {
-			} else {
-				return false;
-			}
+			if (str[i] == str[str.length - 1 - i]) {} else { return false; }
 		}
 		return true;
 	}
-
-	palindrome("eye");
-	palindrome("_eye");
-	palindrome("race car");
-	palindrome("not a palindrome");
-	palindrome("A man, a plan, a canal. Panama");
-	palindrome("never odd or even");
-	palindrome("nope");
-	palindrome("almostomla");
-	palindrome("My age is 0, 0 si ega ym.");
-	palindrome("1 eye for of 1 eye.");
-	palindrome("0_0 (: /-\ :) 0-0");
-	palindrome("five|\_/|four");
 
 */
