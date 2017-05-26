@@ -38,7 +38,7 @@ palindrome("five|\_/|four"); //false
 
 
 
-/* SIMPLIFIED VERSION - NO CONSOLE OUTPUTS
+/* CONDENSED VERSION - NO CONSOLE OUTPUTS
 
 	function palindrome(str) {
 
@@ -54,17 +54,17 @@ palindrome("five|\_/|four"); //false
 		return true;
 	}
 
-	palindrome("eye"); //true
-	palindrome("_eye"); //true
-	palindrome("race car"); //true
-	palindrome("not a palindrome"); //false
-	palindrome("A man, a plan, a canal. Panama"); //true
-	palindrome("never odd or even"); //true
-	palindrome("nope"); //false
-	palindrome("almostomla"); //false
-	palindrome("My age is 0, 0 si ega ym."); //true
-	palindrome("1 eye for of 1 eye."); //false
-	palindrome("0_0 (: /-\ :) 0-0"); //true
-	palindrome("five|\_/|four"); //false
+	palindrome("eye");
+	palindrome("_eye");
+	palindrome("race car");
+	palindrome("not a palindrome");
+	palindrome("A man, a plan, a canal. Panama");
+	palindrome("never odd or even");
+	palindrome("nope");
+	palindrome("almostomla");
+	palindrome("My age is 0, 0 si ega ym.");
+	palindrome("1 eye for of 1 eye.");
+	palindrome("0_0 (: /-\ :) 0-0");
+	palindrome("five|\_/|four");
 
 */

@@ -27,7 +27,7 @@ factorialize(1);
 
 
 
-/* SIMPLIFIED VERSION - NO CONSOLE OUTPUTS
+/* CONDENSED VERSION - NO CONSOLE OUTPUTS
 
 	function factorialize(num) {
 

@@ -25,7 +25,7 @@ reverseString("Greetings from Earth");
 
 
 
-/* SIMPLIFIED VERSION - NO CONSOLE OUTPUTS
+/* CONDENSED VERSION - NO CONSOLE OUTPUTS
 
 	function reverseString(str) {
 		str = str.split('');
