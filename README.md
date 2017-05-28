@@ -5,9 +5,9 @@ The solutions I have created while going through the project challenges at https
 
 ### A few quick links
 
-- [My Portfolio](https://github.com/Squibs/Squibs.github.io#my-portfolio) (Created as a challenge within freeCodeCamp)
+- [My Portfolio](https://github.com/Squibs/Squibs.github.io) (Created as a challenge within freeCodeCamp)
 
-<a href="https://github.com/Squibs/Squibs.github.io#my-portfolio" target="_blank"><img src="Images/screenshot-portfolio.png" height="150
+<a href="https://github.com/Squibs/Squibs.github.io" target="_blank"><img src="Images/screenshot-portfolio.png" height="150
 	" alt="Screenshot of my portfolio page."/></a>
 
 - [My freeCodeCamp Profile](https://www.freecodecamp.com/squibs)

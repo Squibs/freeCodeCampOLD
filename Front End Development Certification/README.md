@@ -2,22 +2,22 @@
 ## Front End Development Certification
 
 ### [Basic Algorithms](https://github.com/Squibs/freeCodeCamp/tree/master/Front%20End%20Development%20Certification/basic-algorithm-scripting)
-<a href="https://github.com/Squibs/freeCodeCamp/tree/master/Front%20End%20Development%20Certification/basic-algorithm-scripting"><img src="../Images/screenshot-basic-algorithms.png" height="400" alt="Screenshot of algorithms"/></a>
+<a href="https://github.com/Squibs/freeCodeCamp/tree/master/Front%20End%20Development%20Certification/basic-algorithm-scripting"><img src="../Images/screenshot-basic-algorithms.png" height="350" alt="Screenshot of algorithms"/></a>
 
 ---
 
 ### [Object Oriented and Functional Programming](https://github.com/Squibs/freeCodeCamp/tree/master/Front%20End%20Development%20Certification/object-oriented-and-functional-programming)
-<a href="https://github.com/Squibs/freeCodeCamp/tree/master/Front%20End%20Development%20Certification/object-oriented-and-functional-programming"><img src="../Images/screenshot-oop.png" height="400" alt="Screenshot of JavaScript objects."/></a>
+<a href="https://github.com/Squibs/freeCodeCamp/tree/master/Front%20End%20Development%20Certification/object-oriented-and-functional-programming"><img src="../Images/screenshot-oop.png" height="300" alt="Screenshot of JavaScript objects."/></a>
 
 ---
 
 ### [Basic JavaScript](https://github.com/Squibs/freeCodeCamp/tree/master/Front%20End%20Development%20Certification/basic-javascript)
-<a href="https://github.com/Squibs/freeCodeCamp/tree/master/Front%20End%20Development%20Certification/basic-javascript"><img src="../Images/screenshot-basic-javascript.png" height="400" alt="Screenshot of some JavaScript source code."/></a>
+<a href="https://github.com/Squibs/freeCodeCamp/tree/master/Front%20End%20Development%20Certification/basic-javascript"><img src="../Images/screenshot-basic-javascript.png" height="300" alt="Screenshot of some JavaScript source code."/></a>
 
 ---
 
 ### [Portfolio](https://github.com/Squibs/Squibs.github.io)
-<a href="https://github.com/Squibs/Squibs.github.io" target="_blank"><img src="../Images/screenshot-portfolio.png" height="400" alt="Screenshot of my portfolio page."/></a>
+<a href="https://github.com/Squibs/Squibs.github.io" target="_blank"><img src="../Images/screenshot-portfolio.png" height="325" alt="Screenshot of my portfolio page."/></a>
 
 ---
 
@@ -27,7 +27,7 @@
 ---
 
 ### [jQuery Playground](https://github.com/Squibs/freeCodeCamp/tree/master/Front%20End%20Development%20Certification/jquery-playground)
-<a href="https://github.com/Squibs/freeCodeCamp/tree/master/Front%20End%20Development%20Certification/jquery-playground" target="_blank"><img src="../Images/screenshot-jquery-playground.png" height="400" alt="Screenshot of jQuery Playground html and jQuery source code."/></a>
+<a href="https://github.com/Squibs/freeCodeCamp/tree/master/Front%20End%20Development%20Certification/jquery-playground" target="_blank"><img src="../Images/screenshot-jquery-playground.png" height="350" alt="Screenshot of jQuery Playground html and jQuery source code."/></a>
 
 ---
 
