@@ -2,8 +2,9 @@
 
 ## [Front End Development Certification](https://github.com/Squibs/freeCodeCamp/tree/master/Front%20End%20Development%20Certification#tribute-page) (Go Back)
 
-### [Tribute Page](https://codepen.io/Sulph/full/XRavGG/) <b>(Click to view functional site on code-pen)</b>
 <a href="https://codepen.io/Sulph/full/XRavGG/" target="_blank"><img src="../../Images/screenshot-tribute-page.png" height="600" alt="Screenshot of John M. Keynes tribute page."/></a>
+
+### [Tribute Page](https://codepen.io/Sulph/full/XRavGG/) (Click to view functional site on code-pen)
 
 <em>Completed May 05, 2017</em>
 
