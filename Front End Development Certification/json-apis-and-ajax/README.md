@@ -2,7 +2,7 @@
 
 ## [Front End Development Certification](https://github.com/Squibs/freeCodeCamp/tree/master/Front%20End%20Development%20Certification#json-apis-and-ajax) (Go Back)
 
-<img src="../../Images/screenshot-json-apis-ajax" height="400" alt="Screenshot of my JSON APIs and Ajax notes"/>
+<img src="../../Images/screenshot-json-apis-and-ajax.png" height="400" alt="Screenshot of my JSON APIs and Ajax notes"/>
 
 ### JSON APIs and Ajax
 
@@ -21,14 +21,14 @@ While this series was quite short, it did give me some insight on how APIs are u
 <b>JSON APIs and Ajax</b>
 
 1. [Refreshers](#refreshers)
-2. [Basic Layout for These Lessons]()
-3. [Examples]()
-	1. [Trigger Click Events with jQuery & Change Text with Click Events]()
-	2. [Get JSON with the jQuery getJSON Method]()
-	3. [Convert JSON Data to HTML]()
-	4. [Render Images from Data Sources]()
-	5. [Prefilter JSON]()
-	6. [Get Geolocation Data]()
+2. [Basic Layout for These Lessons](#basic-layout-of-what-is-being-used-throughout-these-lessons-some-bootstrap-classes)
+3. [Examples](#some-examples-that-can-be-used-with-this-particular-function)
+	1. [Trigger Click Events with jQuery & Change Text with Click Events](#trigger-click-events-with-jquery--change-text-with-click-events)
+	2. [Get JSON with the jQuery getJSON Method](#get-json-with-the-jquery-getjson-method)
+	3. [Convert JSON Data to HTML](#convert-json-data-to-html)
+	4. [Render Images from Data Sources](#render-images-from-data-sources)
+	5. [Prefilter JSON](#prefilter-json)
+	6. [Get Geolocation Data](#get-geolocation-data)
 
 
 ##### Refreshers:

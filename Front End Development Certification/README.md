@@ -1,6 +1,11 @@
 # [freeCodeCamp](https://github.com/Squibs/freeCodeCamp#freecodecamp)
 ## Front End Development Certification
 
+### [JSON APIs and Ajax](https://github.com/Squibs/freeCodeCamp/tree/master/Front%20End%20Development%20Certification/json-apis-and-ajax)
+<a href="https://github.com/Squibs/freeCodeCamp/tree/master/Front%20End%20Development%20Certification/json-apis-and-ajax"><img src="../Images/json-apis-and-ajax.png" height="300" alt="Screenshot of my JSON APIs and Ajax notes."/></a>
+
+---
+
 ### [Basic Algorithms](https://github.com/Squibs/freeCodeCamp/tree/master/Front%20End%20Development%20Certification/basic-algorithm-scripting)
 <a href="https://github.com/Squibs/freeCodeCamp/tree/master/Front%20End%20Development%20Certification/basic-algorithm-scripting"><img src="../Images/screenshot-basic-algorithms.png" height="350" alt="Screenshot of algorithms"/></a>
 
