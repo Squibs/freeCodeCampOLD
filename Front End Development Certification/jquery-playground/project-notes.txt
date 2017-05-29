@@ -34,5 +34,5 @@ $("STRING") is a selector; .addClass("animated bounce"); is adding a css class t
 		eg( target:nth-child(n) )
 			eg ( $(".target:nth-child(3)").addClass("animated bunce"); )
 		.target:odd selects odd-numbered elements
-			jQuery is zero-indexed, meaning that, cunter-intuitively, :odd selects the second, fourth and so on elements.
+			jQuery is zero-indexed, meaning that, counter-intuitively, :odd selects the second, fourth and so on elements.
 		.target:even selects even-numbered elements

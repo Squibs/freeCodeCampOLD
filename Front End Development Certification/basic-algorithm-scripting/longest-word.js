@@ -39,7 +39,7 @@ findLongestWord("What is the average airspeed velocity of an unladen swallow");
 findLongestWord("What if we try a super-long word such as otorhinolaryngology");
 
 
-/* CONDENSED VERSION - NO CONSOLE OUTPUTS
+/* CONDENSED VERSION - NO NOTES OR CONSOLE OUTPUTS
 
 	function findLongestWord(str) {
 
