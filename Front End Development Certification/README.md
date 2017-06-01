@@ -1,6 +1,11 @@
 # [freeCodeCamp](https://github.com/Squibs/freeCodeCamp#freecodecamp)
 ## Front End Development Certification
 
+### [Quote Machine](https://github.com/Squibs/quote-machine)
+<a href="https://github.com/Squibs/quote-machine" target="_blank"><img src="../Images/screenshot-quote-machine.png" height="300" alt="Screenshot of my Quote Machine project / website."/></a>
+
+---
+
 ### [JSON APIs and Ajax](https://github.com/Squibs/freeCodeCamp/tree/master/Front%20End%20Development%20Certification/json-apis-and-ajax)
 <a href="https://github.com/Squibs/freeCodeCamp/tree/master/Front%20End%20Development%20Certification/json-apis-and-ajax"><img src="../Images/screenshot-json-apis-and-ajax.png" height="300" alt="Screenshot of my JSON APIs and Ajax notes."/></a>
 
