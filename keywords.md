@@ -2,20 +2,14 @@
 
 ## Front-End
 
-SublimeText 3
-- Packages
-  - Package Control
-    - Bootstrap 4 Autocomplete
-    - BracketHighlighter
-    - Color Highlighter
-    - GitSavvy
-    - Markdown Preview
-    - SideBarEnhancements
-    - SublimeCodeIntel
-    - SublimeLinter
-      - SublimeLinter-jshint
-    - tern_for_sublime
-    - View In Browser
+VSCode
+- Debugger for Chrome
+- ESLint
+  - (Node NPM ESLint)
+    - (Node NPM ESLint - AirBnB)
+- Git History (git log)
+- HTML Snippets
+- vscode-icons
 
 Node
 - NPM
@@ -45,3 +39,19 @@ Vagrant
 Websites
 - Codepen
 - FreeCodeCamp
+
+No Longer Using
+- SublimeText 3
+  - Packages
+    - Package Control
+      - Bootstrap 4 Autocomplete
+      - BracketHighlighter
+      - Color Highlighter
+      - GitSavvy
+      - Markdown Preview
+      - SideBarEnhancements
+      - SublimeCodeIntel
+      - SublimeLinter
+        - SublimeLinter-jshint
+      - tern_for_sublime
+      - View In Browser
