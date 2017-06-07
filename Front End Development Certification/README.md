@@ -1,6 +1,11 @@
 # [freeCodeCamp](https://github.com/Squibs/freeCodeCamp#freecodecamp)
 ## Front End Development Certification
 
+### [Local Weather](https://github.com/Squibs/local-weather)
+<a href="https://github.com/Squibs/local-weather" target="_blank"><img src="../Images/screenshot-local-weather.png" height="300" alt="Screnshot of my Local Weather App project / website."/></a>
+
+---
+
 ### [Quote Machine](https://github.com/Squibs/quote-machine)
 <a href="https://github.com/Squibs/quote-machine" target="_blank"><img src="../Images/screenshot-quote-machine.png" height="300" alt="Screenshot of my Quote Machine project / website."/></a>
 
