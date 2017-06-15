@@ -1,6 +1,11 @@
 # [freeCodeCamp](https://github.com/Squibs/freeCodeCamp#freecodecamp)
 ## Front End Development Certification
 
+### [Wikipedia Viewer](https://github.com/Squibs/wikipedia-viewer)
+<a href="https://github.com/Squibs/wikipedia-viewer" target="_blank"><img src="../Images/screenshot-wikipedia-viewer.png" height="300" alt="Screnshot of my Wikipedia viewer project / website."/></a>
+
+---
+
 ### [Local Weather](https://github.com/Squibs/local-weather)
 <a href="https://github.com/Squibs/local-weather" target="_blank"><img src="../Images/screenshot-local-weather.png" height="300" alt="Screnshot of my Local Weather App project / website."/></a>
 
