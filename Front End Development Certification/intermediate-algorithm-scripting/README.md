@@ -46,7 +46,7 @@ return sum;
 
 (sum-numbers-range.js)
 
-I believe the point of this algorithm was to help understand the use of the reduce method. However I do not believe I have a full understanding of this method after coming up with my solution using this method. There are several other ways to go about solving this algorithm. One method which would have solved this even easier, which I probably should have remembered better from high school, is using summation (((max + min)(max - min + 1))/2).
+I believe the point of this algorithm was to help understand the use of the ```reduce()``` method. However I do not believe I have a full understanding of this method after coming up with my solution using this method. There are several other ways to go about solving this algorithm. One method which would have solved this even easier, which I probably should have remembered better from high school, is using summation (((max + min)(max - min + 1))/2).
 
 ---
 
@@ -61,7 +61,7 @@ const diffArray = function (arr1, arr2) {
 
 (diff-two-arrays.js)
 
-This one was challenging for me. The last algorithm had me thinking I should use the reduce method for the solution of this. I got to the point where I could filter out the duplicates, but I was missing a way to remove both numbers if they were duplicates. In the end I ended up having to seek additional answers outside of the method documentation. That's where I learned about the includes method.
+This one was challenging for me. The last algorithm had me thinking I should use the ```reduce()``` method for the solution of this. I got to the point where I could filter out the duplicates, but I was missing a way to remove both numbers if they were duplicates. In the end I ended up having to seek additional answers outside of the method documentation. That's where I learned about the includes method.
 
 ---
 
@@ -133,7 +133,7 @@ const whatIsInAName = function (collection, source) {
 
 (wherefore-art-thou.js)
 
-This one again took me a while to get to a point where I was understanding how I should go about finding a solution. At the start I was looping through collection and source, while source was converted to an array of keys, with two for loops. Then I was comparing the keys in the currently selected object in collection with those of in source; however I could not find a way to do this for the sources that had multiple keys/values. I had peek at the answer to find a better solution than what I was trying to create. Using the filter method was the correct choice for this algorithm, much like it was for the previous two algorithms. Using a for loop with the filter method allows for the correct arguments for the if statement to be made and allow the correct object properties to be filtered out.
+This one again took me a while to get to a point where I was understanding how I should go about finding a solution. At the start I was looping through collection and source, while source was converted to an array of keys, with two for loops. Then I was comparing the keys in the currently selected object in collection with those of in source; however I could not find a way to do this for the sources that had multiple keys/values. I had peek at the answer to find a better solution than what I was trying to create. Using the ```filter()``` method was the correct choice for this algorithm, much like it was for the previous two algorithms. Using a for loop with the ```filter()``` method allows for the correct arguments for the if statement to be made and allow the correct object properties to be filtered out.
 
 ---
 
@@ -163,7 +163,7 @@ const myReplace = function (str, before, after) {
 
 For this algorithm, since the previous algorithms were mainly working with arrays, I figured I should do the same here. I converted the passed string to an array and used the map method to iterate through the created array replacing the current value with the passed after variable if it was equal to the before value. The replaced value was checked for capitalization before replacing so the value replacing the before value would keep the same casing.
 
-Checking the provided solutions for this algorithm, I could have done this a bit simpler by using the string methods indexOf() and replace rather than coverting everything to an array and using array methods.
+Checking the provided solutions for this algorithm, I could have done this a bit simpler by using the string methods ```indexOf()``` and ```replace()``` rather than coverting everything to an array and using array methods.
 
 ---
 
@@ -199,7 +199,7 @@ const translatePigLatin = function (str) {
 
 I itterate through the string and a vowels array and compare the two. If the first letter is a vowel just add way to the end of the string. If the word contains a vowel somewhere else slice up to the vowel and put it to the end of the string then add ay to the end of that. If there is no vowel in the word, just ad ay to the end of the word.
 
-After looking at the provided solutions for this, I'm learning that I take the long way around for most things right now. There are better solutions for itterating through strings and arrays and accomplishing what I'm doing in a more simplified / less lines of code way. I could use regex instead of an array to store the vowels and use the match method to search for those letters in the string.
+After looking at the provided solutions for this, I'm learning that I take the long way around for most things right now. There are better solutions for itterating through strings and arrays and accomplishing what I'm doing in a more simplified / less lines of code way. I could use regex instead of an array to store the vowels and use the ```match()``` method to search for those letters in the string.
 
 ---
 
@@ -217,7 +217,7 @@ const pairElement = function (str) {
 
 (dna-pairing.js)
 
-I started off by putting each pair (AT TA CG GC) as an array in an array [[A,T],[T,A],[C,G],[G,C]]. Since I have been working with APIs in the previous intermediate front end development projects, I decided to turn the array of arrays into a format I'm now familiar with JSON / object. I then split the passed string into an array and used the map method to itterate through the created array. I used the currently selected object/value of the map method to return the correct DNA pair using the previously created object.
+I started off by putting each pair (AT TA CG GC) as an array in an array [[A,T],[T,A],[C,G],[G,C]]. Since I have been working with APIs in the previous intermediate front end development projects, I decided to turn the array of arrays into a format I'm now familiar with JSON / object. I then split the passed string into an array and used the ```map()``` method to itterate through the created array. I used the currently selected object/value of the ```map()``` method to return the correct DNA pair using the previously created object.
 
 ---
 
@@ -246,7 +246,7 @@ const fearNotLetter = function (str) {
 
 (missing-letters.js)
 
-I believe this might be one of the worst solutions I have come up with yet. After looking at the solutions and comparing to mine, I feel as if I'm going about everything incorrectly. I'm definitely using use the filter method wrong in this case. I should have used the map function to iterrate through instead of using filter to iterate through the created array from using split on the passed string.
+I believe this might be one of the worst solutions I have come up with yet. After looking at the solutions and comparing to mine, I feel as if I'm going about everything incorrectly. I'm definitely using use the ```filter()``` method wrong in this case. I should have used the map function to iterrate through instead of using filter to iterate through the created array from using split on the passed string.
 
 <strong>Note from later:</strong>
 After looking back at this again compared to the intermediate code solution for this algorithm, I was on the right track with ```const string = str.split('').map(curObj => curObj.charCodeAt(0));```
@@ -269,7 +269,7 @@ function fearNotLetter(str) {
 }
 ```
 
-If I would have used the index along with the currently selected object in the map method (or ```letter``` in the above solution), I think I could have gotten a solution very similar to this. Instead I decided to iterate again through the array using filter, instead of just using the map method I already used.
+If I would have used the index along with the currently selected object in the ```map()``` method (or ```letter``` in the above solution), I think I could have gotten a solution very similar to this. Instead I decided to iterate again through the array using filter, instead of just using the ```map()``` method I already used.
 
 ---
 
@@ -331,7 +331,7 @@ const uniteUnique = function (arr) {
 
 For this solution I retrieved the multiple arguments with ```Array.from(arguments)```. In the future I would accomplish the same using rest parameters which were introduced in ES2015(ES6). Rest parameters would allow for a indefinite number of arguments, as an array, in a similar fashion to the above.
 
-After retrieving the arguments I flattened the array a bit using reduce and concating the current value, from reduce, to the previous value. After the array is flattened to the appropriate level; I iterated through the flattened array with the forEach method and pushed unique values to a new variable.
+After retrieving the arguments I flattened the array a bit using reduce and concating the current value, from reduce, to the previous value. After the array is flattened to the appropriate level; I iterated through the flattened array with the ```forEach()``` method and pushed unique values to a new variable.
 
 ---
 
@@ -347,8 +347,34 @@ const convertHTML = function (str) {
 
 (convert-html-entities.js)
 
-This is the first solution where I feel as though I accomplished everything in a manner that is appropriate out of all the previous intermediate algorithm challenges. I first set up an object relating the character codes to the html entities of which would be needed later to convert symbols in strings. I then used the replace method with a regex expression to which would find matches that I would then convert to character codes to lookup in the previously created object and replace the symbol with the html entity.
+This is the first solution where I feel as though I accomplished everything in a manner that is appropriate out of all the previous intermediate algorithm challenges. I first set up an object relating the character codes to the html entities of which would be needed later to convert symbols in strings. I then used the ```replace()``` method with a regex expression to which would find matches that I would then convert to character codes to lookup in the previously created object and replace the symbol with the html entity.
 
 Looking at the solutions for this particular algorithm / challenge, I feel as though I gave a pretty close solution to the 'advanced' solution. The given solution spliting the passed string into an array and using the map function to then use a object with direct symbol lookups rather than charcode lookups. I originally was going to do that, but stopped when I got to the apostrophe (') as I was not sure if doing ```'\'': '&apos;'``` would cause an issue with the escape character being in there. Switching to the way the solution has the object I would be able to remove one method from my return line ```.charCodeAt(0)```
+
+---
+
+##### Spinal Tap Case
+
+```JavaScript
+// CONDENSED VERSION - NO CONSOLE OUTPUTS
+const spinalCase = function (str) {
+  const spinal = str.replace(/[a-z](?=[A-Z])/g, '$& ');
+  return spinal.split(/[\s_-]/g).join('-').toLowerCase();
+};
+```
+
+(spinal-tap-case.js)
+
+This challenge listed regex (regular expressions) as a 'helpful link' so I figured I should complete this challenge using regex. I split this into two parts, because I'm unsure of how to, or even if I can, combine these two parts together. 
+
+I take the passed string and use the ```replace()``` method to put in spaces between lowercase letters and uppercase letters that are right next to each other. I used a special replacement pattern (```$&```) for the ```replace()``` method which as far as I can tell you can write a string next to this to have inserted at the matched point / characters. I will have to look into this special replacement pattern as well as others. I put in a space following the pattern to put in the space needed.
+
+Next I take the modified string, which is just added spaces, and split that string into an array with the ```split()``` method. I split the string at any whitespace, underscore, or hyphen. I then immediately join the string using a hyphen. In writing that, I probably didn't even need to split at each hyphen previously.
+
+Taking a look at the solutions, I definitely could have combined my regular expressions. 
+```JavaScript
+return str.split(/\s|_|(?=[A-Z])/).join('-').toLowerCase()
+``` 
+This is the provided 'advanced' solution. I was pretty close to achieving this. I believe if I understood regular expressions more I would have been able to come up with exactly this. Leave out the hyphen, and use this version of the ```?=``` quantifier. Where I use this quantifier ```/[a-z](?=[A-Z])/g``` I'm selecting a lowercase letter followed immediately by an uppercase letter. I'm assuming the given solution's version is selecting anything that is followed by a capital letter.
 
 ---
