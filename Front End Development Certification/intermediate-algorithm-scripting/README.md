@@ -378,3 +378,37 @@ return str.split(/\s|_|(?=[A-Z])/).join('-').toLowerCase()
 This is the provided 'advanced' solution. I was pretty close to achieving this. I believe if I understood regular expressions more I would have been able to come up with exactly this. Leave out the hyphen, and use this version of the ```?=``` quantifier. Where I use this quantifier ```/[a-z](?=[A-Z])/g``` I'm selecting a lowercase letter followed immediately by an uppercase letter. I'm assuming the given solution's version is selecting anything that is followed by a capital letter.
 
 ---
+
+##### Sum All Odd Fibonacci Numbers
+
+```JavaScript
+// CONDENSED VERSION - NO CONSOLE OUTPUTS
+const sumFibs = function (num) {
+  if (num < 3) { return num; }
+
+  let fib = [0, 1, 1, 2];
+
+  for (let i = 3; fib[i] < num; i += 1) {
+    fib.push(fib[i] + fib[i - 1]);
+  }
+
+  if (fib[fib.length - 1] > num) { fib.pop(); }
+
+  fib = fib.filter((value) => {
+    if (value % 2 === 0) {
+      return false;
+    }
+    return true;
+  });
+
+  return fib.reduce((prev, curr) => prev + curr);
+};
+```
+
+(fibonacci-numbers.js)
+
+I first check the passed number to see if it is less than 3. If it is I just return the number as the sum off odd fibonacci sequence numbers for 2 is 2 (0, 1, 1) and for 1, there is only (0, 1) so this works as a simple solution for low numbers. Alternatively I could just leave this check out completely. I then push the sum of the last index value of the array to the second to last value to the end of the array and continue this while the last value of the array is less than the passed number. I then put in a check to see if the last value is less than the passed number, if it is greater: remove the last value. I then remove any even value by checking (value remainder 2) which will return 0 for even or 1 for odd. Then it's a matter of adding up the values in the index and returning that.
+
+While my solution may not be optimal, I feel as though I solved this challenge in a way that is similar to the provided intermediate code solution.
+
+---
