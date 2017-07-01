@@ -3,7 +3,7 @@ console.log('Write a function that takes two or more arrays and returns a new ar
 /* eslint-disable prefer-rest-params */
 
 // would use ...arr (rest parameter) in the future
-// then ```const reduced = Array.from(...arr).reduce(
+// then ```const reduced = Array.from(arr).reduce(```
 const uniteUnique = function (arr) {
   console.log(`Passed arguments: ${JSON.stringify(Array.from(arguments))}`);
   const reduced = Array.from(arguments).reduce(

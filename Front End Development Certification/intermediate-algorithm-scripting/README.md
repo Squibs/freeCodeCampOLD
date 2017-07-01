@@ -312,9 +312,43 @@ Any other object | "object"
 
 ```JavaScript
 // CONDENSED VERSION - NO CONSOLE OUTPUTS
+const uniteUnique = function (arr) {
+  const reduced = Array.from(arguments).reduce(
+    (prev, curr) => prev.concat(curr));
+
+  const sorted = [];
+  reduced.forEach((element) => {
+    if (!sorted.includes(element)) {
+      sorted.push(element);
+    }
+  });
+
+  return sorted;
+};
 ```
 
 (sorted-union.js)
 
+For this solution I retrieved the multiple arguments with ```Array.from(arguments)```. In the future I would accomplish the same using rest parameters which were introduced in ES2015(ES6). Rest parameters would allow for a indefinite number of arguments, as an array, in a similar fashion to the above.
+
+After retrieving the arguments I flattened the array a bit using reduce and concating the current value, from reduce, to the previous value. After the array is flattened to the appropriate level; I iterated through the flattened array with the forEach method and pushed unique values to a new variable.
+
+---
+
+##### Convert HTML Entities
+
+```JavaScript
+// CONDENSED VERSION - NO CONSOLE OUTPUTS
+const convertHTML = function (str) {
+  const lookup = {34: '&quot;', 38: '&amp;', 39: '&apos;', 60: '&lt;', 62: '&gt;',};
+  return str.replace(/[&<>"']/gi, match => lookup[match.charCodeAt(0)]);
+};
+```
+
+(convert-html-entities.js)
+
+This is the first solution where I feel as though I accomplished everything in a manner that is appropriate out of all the previous intermediate algorithm challenges. I first set up an object relating the character codes to the html entities of which would be needed later to convert symbols in strings. I then used the replace method with a regex expression to which would find matches that I would then convert to character codes to lookup in the previously created object and replace the symbol with the html entity.
+
+Looking at the solutions for this particular algorithm / challenge, I feel as though I gave a pretty close solution to the 'advanced' solution. The given solution spliting the passed string into an array and using the map function to then use a object with direct symbol lookups rather than charcode lookups. I originally was going to do that, but stopped when I got to the apostrophe (') as I was not sure if doing ```'\'': '&apos;'``` would cause an issue with the escape character being in there. Switching to the way the solution has the object I would be able to remove one method from my return line ```.charCodeAt(0)```
 
 ---
