@@ -448,3 +448,31 @@ After I generated prime numbers from 2 up to the passed number or lower, I then 
 This is one I think I will have to return to in the future to better understand what it is I'm doing here. This is the first challenge out of the basic and intermediate algorithm challenges that I feel a bit lost on.
 
 ---
+
+##### Smallest Common Multiple
+
+```JavaScript
+// CONDENSED VERSION - NO CONSOLE OUTPUTS
+const smallestCommons = function (arr) {
+  const multiples = function (total, max, min) {
+    for (let i = min; i <= max; i += 1) {
+      if (total % i !== 0) { return false; }
+    }
+    return true;
+  };
+
+  const maximum = Math.max(arr[0], arr[1]);
+  let total = maximum;
+
+  while (!multiples(total, maximum, Math.min(arr[0], arr[1]))) {
+    total += maximum;
+  }
+
+  return total;
+};
+```
+
+(smallest-multiple.js)
+
+This one was hard as well for me. I started out by putting the range of each passed argument into a new array and trying to work from that. Once I couldn't figure that out I moved onto finding new solutions. I created another method that loops through each number between the passed argument and tests whether or not the remainder of the total divided by the current number is not equal to 0. It returns false until they all match. The control for this method is in a while loop that addes the maximum to the total each time it returns false. This eventually leads to having the lowest common multiple in the range of numbers.
+---
