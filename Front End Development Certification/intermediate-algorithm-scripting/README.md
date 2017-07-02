@@ -412,3 +412,39 @@ I first check the passed number to see if it is less than 3. If it is I just ret
 While my solution may not be optimal, I feel as though I solved this challenge in a way that is similar to the provided intermediate code solution.
 
 ---
+
+##### Sum All Primes
+
+```JavaScript
+// CONDENSED VERSION - NO CONSOLE OUTPUTS
+const sumPrimes = function (num) {
+  if (num === 1) {
+    console.log('Passed number is 1, which is not prime; return 0\n');
+    return 0;
+  }
+
+  let sieve = [];
+  const primes = [];
+
+  for (let i = 2; i <= num; i += 1) {
+    sieve.push(i);
+  }
+
+  while (sieve.length) {
+    primes.push(sieve.shift());
+    sieve = sieve.filter(value => value % primes[primes.length - 1] !== 0);
+  }
+
+  return primes.reduce((acc, cur) => acc + cur, 0);
+};
+```
+
+(sum-all-primes.js)
+
+This one was probably the hardest for me yet. I had to look up a lot of help for this. In creating my solution; I found ways to tell if a number was prime, another round-about way to see if a number was prime, however, I could not figure out a reliable way to generate prime numbers without having duplicate numbers appear seamingly randomly. I found out about the <em>Sieve of Eratosthenes</em> and from there had to study how people where using it in javascript to generate prime numbers.
+
+After I generated prime numbers from 2 up to the passed number or lower, I then used the ```reduce()``` method to add up all the prime numbers, which were stored in an array, and returned that value.
+
+This is one I think I will have to return to in the future to better understand what it is I'm doing here. This is the first challenge out of the basic and intermediate algorithm challenges that I feel a bit lost on.
+
+---
