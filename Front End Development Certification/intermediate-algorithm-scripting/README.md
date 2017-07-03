@@ -559,3 +559,24 @@ return arr.slice(arr.findIndex(func) >= 0 ? arr.findIndex(func) : []]);
 Which I now realize exactly why this was not working. The conditional statement within the ```slice()``` method is stating what the method should slice out and not return from the entire ```dropElements()``` method. I'm not sure why I was thinking that way, it was just a simple mistake. I feel as though I was so very close to getting this exact answer, and if I would have just sat there and thought about it for a minute I probably would have gotten it.
 
 ---
+
+##### Steamroller
+
+```JavaScript
+// CONDENSED VERSION - NO CONSOLE OUTPUTS
+const steamrollArray = function (arr) {
+  const flattenArray = function (array) {
+    return array.reduce((prev, cur) =>
+    prev.concat(Array.isArray(cur) ? flattenArray(cur) : cur), []);
+  };
+
+  return flattenArray(arr);
+};
+```
+
+(steamroller.js)
+
+I already stumbled across how to do this when doing the <em>Sorted Union</em> algorithm challenge. I simply went back to that challenge and modified what I already had used.
+Previously I used: ```.reduce((prev, curr) => prev.concat(curr));```. This time I needed to run this multiple times to flatten the array completely, so I use an argument in the ```concat()``` method. If the current value is an array flatten the array with the same method that is already flattening the array; otherwise concat the current value to the previous value. Importantly set the ```concat()``` method to an inital value of an empty array ```[]``` as well.
+
+---
