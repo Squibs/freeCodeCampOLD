@@ -580,3 +580,55 @@ I already stumbled across how to do this when doing the <em>Sorted Union</em> al
 Previously I used: ```.reduce((prev, curr) => prev.concat(curr));```. This time I needed to run this multiple times to flatten the array completely, so I use an argument in the ```concat()``` method. If the current value is an array flatten the array with the same method that is already flattening the array; otherwise concat the current value to the previous value. Importantly set the ```concat()``` method to an inital value of an empty array ```[]``` as well.
 
 ---
+
+##### Binary Agents
+
+```JavaScript
+// CONDENSED VERSION - NO CONSOLE OUTPUTS
+const binaryAgent = function (str) {
+  const array = str.split(' ');
+
+  array.forEach((value, index) => {
+    const binary = [128, 64, 32, 16, 8, 4, 2, 1];
+    let sum = 0;
+    for (let i = 0; i < value.length; i += 1) {
+      sum += value.charAt(i) * binary[i];
+    }
+    array[index] = String.fromCharCode(sum);
+    return value;
+  });
+
+  return array.join('');
+};
+```
+
+(binary-agents.js)
+
+This is the solution I came up with initially. Then I came up with a revised solution:
+
+```JavaScript
+const binaryAgent = function (str) {
+  const binary = [128, 64, 32, 16, 8, 4, 2, 1];
+  return str.split(' ').map((value) => {
+    let sum = 0;
+    for (let i = 0; i < value.length; i += 1) {
+      sum += value.charAt(i) * binary[i];
+    }
+    return String.fromCharCode(sum);
+  }).join('');
+};
+```
+
+I create an array for an 8 bit value. I then split the passed string into an array at each space. I then ```map()``` the array and for each value I use a for loop to get each character and add that value times the current 8-bit/binary position (binary[i]) to a sum. I then return the charcode of the sum and repeat this for each value. I then join the array and return it as a string. I used instructions mainly from [here](https://www.kidscodecs.com/a-binary-numbers-tutorial-with-1-and-0/) as I never knew how to translate binary.
+
+Looking at the provided solutions, particularly the advanced solution:
+
+```JavaScript
+function binaryAgent(str) {
+  return String.fromCharCode(...str.split(" ").map(function(char){ return parseInt(char, 2); }));
+}
+```
+
+This is very interesting to see for me. I learned earlier about using ```...variable``` to retrieve multiple arguments from an array. But this would be put in the functions accepted arguments and wasn't used the other way around like this. I also didn't know you could do this on a single passed argument, a string in this case, I will have to learn more about the ```spread syntax```, this seems pretty useful.
+
+---
