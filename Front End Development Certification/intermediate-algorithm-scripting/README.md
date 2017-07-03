@@ -530,3 +530,32 @@ Note: find() does not change the original array.
 It would appear it works like I thought, stopping on the first true value returned; however it will run the function for each value if the function is not returning boolean values (probably only if it returns true?).
 
 ---
+
+##### Drop It
+
+```JavaScript
+// CONDENSED VERSION - NO CONSOLE OUTPUTS
+const dropElements = function (arr, func) {
+  const stop = arr.findIndex(func);
+  if (stop === -1) { return []; }
+  return arr.slice(stop, arr.length);
+};
+```
+
+(drop-it.js)
+
+After finishing my solution and looking at the provided answers I realized I could have made this solution one line as well. The provided solution:
+
+```JavaScript
+function dropElements(arr, func) {
+  return arr.slice(arr.findIndex(func) >= 0 ? arr.findIndex(func): arr.length, arr.length);
+}
+```
+This is exactly what I was trying to accomplish at the start of the algorithm challenge, but could not figure out what I was doing wrong. I was trying something like:
+
+```JavaScript
+return arr.slice(arr.findIndex(func) >= 0 ? arr.findIndex(func) : []]);
+```
+Which I now realize exactly why this was not working. The conditional statement within the ```slice()``` method is stating what the method should slice out and not return from the entire ```dropElements()``` method. I'm not sure why I was thinking that way, it was just a simple mistake. I feel as though I was so very close to getting this exact answer, and if I would have just sat there and thought about it for a minute I probably would have gotten it.
+
+---
