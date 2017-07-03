@@ -475,4 +475,58 @@ const smallestCommons = function (arr) {
 (smallest-multiple.js)
 
 This one was hard as well for me. I started out by putting the range of each passed argument into a new array and trying to work from that. Once I couldn't figure that out I moved onto finding new solutions. I created another method that loops through each number between the passed argument and tests whether or not the remainder of the total divided by the current number is not equal to 0. It returns false until they all match. The control for this method is in a while loop that addes the maximum to the total each time it returns false. This eventually leads to having the lowest common multiple in the range of numbers.
+
+---
+
+##### Finders Keepers
+
+```JavaScript
+// CONDENSED VERSION - NO CONSOLE OUTPUTS
+const findElement = function (arr, func) {
+  for (let i = 0; i < arr.length; i += 1) {
+    if (func(arr[i])) {
+      return arr[i];
+    }
+  }
+  return undefined;
+};
+```
+
+(finders-keepers.js)
+
+Since this one was so short I decided to take another go at it, and make it even shorter. I knew there Had to be some type of method that could handle this without a for loop. So I took a good look at the available array methods and came up with:
+
+```JavaScript
+const findElement = function (arr, func) {
+  return arr.find(value => func(value));
+};
+```
+
+(finders-keepers-revised.js)
+
+I take the passed array and use the ```find()``` method to find the value which meets the criteria of the passed function and return the first value that does.
+
+Taking a look at the answers, I believe I found a much simpler method than the provided answers. Upon looking at the comments for further answers, someone listed this as their answer:
+
+```JavaScript
+return arr.find(func);
+```
+
+This takes what I came up with and makes it even shorter. Just when I thought I came up with as optimal solution as I could, it just goes to show that there is always another, better way to accomplish the same thing; especially as I am still learning. As far as I can tell since the ```find()``` method has a description similar to this: "<em>Returns the value of the first element in an array that pass a test</em>"; it is possible to just skip defining the ```value``` predicate and stating to return a value running through another function... and just put the function there. The function going into the ```find()``` method as an example for this challenge would be something like: ```findElement([..., function(num) { return num % 2 === 0; });``` or rewritten as: ```findElement(..., num => num % 2 === 0);```. The function already is declaring that it will accept a num variable and return true or false depending on the equation; so I guess the ```find()``` method will just automatically pass each value in order in the array to this function and then return the first value that passes that functions test.
+
+And looking at the definition / usage of the method:
+
+```
+The find() method executes the function once for each element present in the array:
+
+If it finds an array element where the function returns a true value, find() returns the value of that array element (and does not check the remaining values)
+Otherwise it returns undefined
+
+Note: find() does not execute the function for array elements without values.
+
+Note: find() does not change the original array.
+```
+
+It would appear it works like I thought, stopping on the first true value returned; however it will run the function for each value if the function is not returning boolean values (probably only if it returns true?).
+
 ---
