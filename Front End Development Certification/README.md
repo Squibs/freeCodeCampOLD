@@ -1,6 +1,11 @@
 # [freeCodeCamp](https://github.com/Squibs/freeCodeCamp#freecodecamp)
 ## Front End Development Certification
 
+### [Intermediate Algorithms](https://github.com/Squibs/freeCodeCamp/tree/master/Front%20End%20Development%20Certification/intermediate-algorithm-scripting)
+<a href="https://github.com/Squibs/freeCodeCamp/tree/master/Front%20End%20Development%20Certification/intermediate-algorithm-scripting" target="_blank"><img src="../Images/screenshot-intermediate-algorithms.png" height="300" alt="Screenshot of my intermediate algorithms"/></a>
+
+---
+
 ### [Twitch Streamer Status](https://github.com/Squibs/twitch-streamers)
 <a href="https://github.com/Squibs/twitch-streamers" target="_blank"><img src="../Images/screenshot-twitch-streamers.png" height="300" alt="Screnshot of my Twitch streamer status project / website."/></a>
 
