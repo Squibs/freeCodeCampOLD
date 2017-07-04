@@ -2,13 +2,13 @@
 
 ## [Front End Development Certification](https://github.com/Squibs/freeCodeCamp/tree/master/Front%20End%20Development%20Certification#intermediate-algorithms) (Go Back)
 
-<img src="" height="400" alt="Screenshot of algorithms"/>
+<img src="../../Images/screenshot-intermediate-algorithms.png" height="400" alt="Screenshot of algorithms"/>
 
 ### Intermediate Algorithms
 
 <em>Completed INSERT DATE HERE</em>
 
-description description description description description description description description description description description description description description description description description description description description description description description description description description description description description description 
+This was a series of challenges much like the <em>Basic Algorithm Challenges</em> only these challenges pushed what I could do even further. I learned a lot doing these challenges, and I now feel a lot more comfortable with using the JavaScript array and string methods, as well as regular expressions. I do still need to use a reference for these, as there are a lot of methods and it would take a while yet for me to recall them all from only memory, but I now feel that I am able to work with them in ways they are meant to be used.
 
 <img src="../../Images/icon-javascript.png" height="48" alt="JavaScript Icon"/>
 
@@ -22,7 +22,7 @@ description description description description description description descript
 2. [Sum All Numbers in a Range](#sum-all-numbers-in-a-range)
 
 ##### General Notes
-words words words words words words words words words words words words words words words words words words words words words words words words words words words words words words words words words words words words words words words
+I created the solutions to these algorithms in ways that I thought up of at the time. Some of them I revised shortly after creating them, to reduce the number of lines needed to output the correct values. I do not believe any of the solutions I came up with are completely optimal, as I am still learning, but I do believe I have come up with alternative solutions for these challenges.
 
 ---
 
@@ -630,5 +630,35 @@ function binaryAgent(str) {
 ```
 
 This is very interesting to see for me. I learned earlier about using ```...variable``` to retrieve multiple arguments from an array. But this would be put in the functions accepted arguments and wasn't used the other way around like this. I also didn't know you could do this on a single passed argument, a string in this case, I will have to learn more about the ```spread syntax```, this seems pretty useful.
+
+---
+
+##### Everytyhing Be True
+
+```JavaScript
+// CONDENSED VERSION - NO CONSOLE OUTPUTS
+const truthCheck = function (collection, pre) {
+  return collection.every(value => !!value[pre]);
+};
+```
+
+(everything-be-true.js)
+
+It took me a while to figure out once part of this; below is an example of what I was using until I could figure it out:
+
+```JavaScript
+  console.log(`Return: ${collection.every((value) => {
+    console.log(`Value: ${value[pre]}`);
+    console.log(`Truthy?: ${!!value[pre]}`);
+    return !!value[pre];
+  })}\n`);
+```
+
+fI was trying to figure out how to compare a value to ```Boolean```. The reason being, in the <em>basic algorithm challenges</em> specificaly <strong>Falsy Bouncer</strong>. From the beginning I knew that particular algorithm would have the answer for this one. I spent a while trying to do something such as ```return value[pre] === Boolean``` in the above example. It wasn't working, while I thought it would as in <strong>Falsy Bouncer</strong>. I also tried ```return typeof (value[pre]) === 'boolean'``` as I thought that could work for telling if a value was falsy/truthy or not. In the end I learned about ```!!``` (not not).
+
+I already knew about ```!``` (not), which I have used several times before; but then while searching for the opposite of ```!``` I found ```!!```. This allowed me to test just ```!!value[pre]``` and return ```true``` or ```false``` correctly for this challenge. While ```!value[pre]``` would return the opposite of what I wanted to return.
+
+In the end I came up with my solution above: ```return collection.every(value => !!value[pre]);``` which correctly returns true or false; and can tell truthy values (the opposite of the <strong>Falsy Bouncer</strong> challenge).
+
 
 ---

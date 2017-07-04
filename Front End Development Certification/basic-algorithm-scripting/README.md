@@ -40,7 +40,7 @@ This was a series of challenges in which I had to create basic functions (algori
 ##### General Notes
 To start off, I created these algorithms based on how I thought this would be accomplished at the time. I new going into each and every one of these that there would almost always be a way better solution than what I could come up with. These are just the solutions that I came up with using what I have learned in previous freeCodeCamp lessons and what I stumbled across while looking up exactly how several functions/methods worked.
 
-IMPORTANT methods to use for any of these algorithms would be the string methods (https://www.w3schools.com/js/js_string_methods.asp) and the array methods (https://www.w3schools.com/js/js_array_methods.asp).
+IMPORTANT methods to use for any of these algorithms would be the [string methods](https://www.w3schools.com/js/js_string_methods.asp) and the [array methods](https://www.w3schools.com/js/js_array_methods.asp).
 
 I know any of these algorithms can be optimized, over the solutions I created. Perhaps even all of them can be as simple as one or two lines. You can view my comments and non-condensed versions of all of these algorithm solutions I came up within their files above.
 
