@@ -6,7 +6,7 @@
 
 ### Intermediate Algorithms
 
-<em>Completed INSERT DATE HERE</em>
+<em>Completed July 3, 2017</em>
 
 This was a series of challenges much like the <em>Basic Algorithm Challenges</em> only these challenges pushed what I could do even further. I learned a lot doing these challenges, and I now feel a lot more comfortable with using the JavaScript array and string methods, as well as regular expressions. I do still need to use a reference for these, as there are a lot of methods and it would take a while yet for me to recall them all from only memory, but I now feel that I am able to work with them in ways they are meant to be used.
 
@@ -20,6 +20,27 @@ This was a series of challenges much like the <em>Basic Algorithm Challenges</em
 
 1. [General Notes](#general-notes)
 2. [Sum All Numbers in a Range](#sum-all-numbers-in-a-range)
+3. [Diff Two Arrays](#diff-two-arrays)
+4. [Roman Numeral Converter](#roman-numeral-converter)
+5. [Wherefore art thou](#wherefore-art-thou)
+6. [Wherefore art thou](#wherefore-art-thou-1)
+7. [Pig Latin](#pig-latin)
+8. [DNA Pairing](#dna-pairing)
+9. [Missing Letters](#missing-letters)
+10. [Boo who](#boo-who)
+11. [Sorted Union](#sorted-union)
+12. [Convert HTML Entities](#convert-html-entities)
+13. [Spinal Tap Case](#spinal-tap-case)
+14. [Sum All Odd Fibonacci Numbers](#sum-all-odd-fibonacci-numbers)
+15. [Sum All Primes](#sum-all-primes)
+16. [Smallest Common Multiple](#smallest-common-multiple)
+17. [Finders Keepers](#finders-keepers)
+18. [Drop It](#drop-it)
+19. [Steamroller](#steamroller)
+20. [Binary Agents](#binary-agents)
+21. [Everytyhing Be True](#everytyhing-be-true)
+22. [Arguments Optional](#arguments-optional)
+
 
 ##### General Notes
 I created the solutions to these algorithms in ways that I thought up of at the time. Some of them I revised shortly after creating them, to reduce the number of lines needed to output the correct values. I do not believe any of the solutions I came up with are completely optimal, as I am still learning, but I do believe I have come up with alternative solutions for these challenges.
