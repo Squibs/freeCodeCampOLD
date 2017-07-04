@@ -28,6 +28,7 @@ WORDS WORDS WORDS WORDS WORDS WORDS WORDS WORDS WORDS WORDS WORDS WORDS WORDS WO
 ##### Validate US Telephone Numbers
 
 ```JavaScript
+// CONDENSED VERSION - NO CONSOLE OUTPUTS
 const telephoneCheck = function (str) {
   return /^1*\s?(\s?\(\d{3}\)\s?|\d{3}-?\s?)\d{3}\s?-?\d{4}$/g.test(str);
 };
@@ -82,5 +83,69 @@ freeCodeCamp states that this example, the intermediate code solution, is an exa
 In the end I feel I completed this challenge in a way quite similar to the way freeCodeCamp would be expecting someone to finish this challenge at this stage of progress through the Front End Development Certification.
 
 In the future I would probably split the regular expression up into different variables and them combine them later to keep things neater and give more explaination of what is happening; and to make changes to the expression easier. This could also mean in longer strands of regex, previously variables could be used again instead of rewriting what may be already written if everything is formatted in a logical way.
+
+---
+
+##### Record Collection
+
+```JavaScript
+// CONDENSED VERSION - NO CONSOLE OUTPUTS
+const updateRecords = function (id, prop, value) {
+if (!collection[id][prop]) {
+	if (prop === 'tracks') {
+	collection[id][prop] = [];
+	} else {
+	collection[id][prop] = value;
+	}
+}
+if (value === '') {
+	delete collection[id][prop];
+} else if (Array.isArray(collection[id][prop])) {
+	collection[id][prop].push(value);
+} else {
+	collection[id][prop] = value;
+}
+return collection;
+};
+```
+
+(record-collection.js)
+
+This challenge felt out of place. The entire time I was thinking there is probably going to be a better way to handle this; however, going to the provided solutions for this problem after completing my solution, I was left slightly confused. The provided solution, only a basic solution is available for this challenge, is much like mine. A lot of if statements, and nested if statements:
+
+```JavaScript
+function updateRecords(id, prop, value) {
+  if (prop === "tracks" && value !== "") {
+   if(collection[id][prop]) {
+    collection[id][prop].push(value);
+   }
+   else {
+    collection[id][prop]=[value];
+   }
+  } else if (value !== "") {
+    collection[id][prop] = value;
+  } else {
+    delete collection[id][prop];
+  }
+
+  return collection;
+}
+```
+
+This challenge didn't take very long at all to complete and I almost feel like it should not be in the advanced algorithm challenges. I know freeCodeCamp has a beta site up for a future restructure, and I have gone through some of it before returning back to the released version of freeCodeCamp; hopefully this is something that they will be fixing (or perhaps it already is fixed). Nonetheless I do now know how to work with objects just a little more.
+
+I now know how to add a property and how to delete a property. Adding a property is simply just setting a wanted property to a value with an ```=``` operator. And deleting a property is as simple as using the ```delete``` operator and listing the ```object.property``` or ```object[varForProp]```.
+
+---
+
+##### Symmetric Difference
+
+```JavaScript
+// CONDENSED VERSION - NO CONSOLE OUTPUTS
+```
+
+(symmetric-difference.js)
+
+
 
 ---
