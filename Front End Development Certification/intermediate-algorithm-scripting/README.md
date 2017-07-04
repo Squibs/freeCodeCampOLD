@@ -577,7 +577,7 @@ const steamrollArray = function (arr) {
 (steamroller.js)
 
 I already stumbled across how to do this when doing the <em>Sorted Union</em> algorithm challenge. I simply went back to that challenge and modified what I already had used.
-Previously I used: ```.reduce((prev, curr) => prev.concat(curr));```. This time I needed to run this multiple times to flatten the array completely, so I use an argument in the ```concat()``` method. If the current value is an array flatten the array with the same method that is already flattening the array; otherwise concat the current value to the previous value. Importantly set the ```concat()``` method to an inital value of an empty array ```[]``` as well.
+Previously I used: ```.reduce((prev, curr) => prev.concat(curr));```. This time I needed to run this multiple times to flatten the array completely, so I use an argument in the ```concat()``` method. If the current value is an array flatten the array with the same function that is already flattening the array; otherwise concat the current value to the previous value. Importantly set the ```concat()``` method to an inital value of an empty array ```[]``` as well.
 
 ---
 
@@ -662,3 +662,32 @@ In the end I came up with my solution above: ```return collection.every(value =>
 
 
 ---
+
+##### Arguments Optional
+
+```JavaScript
+// CONDENSED VERSION - NO CONSOLE OUTPUTS
+const addTogether = function () {
+  const args = Array.from(arguments);
+
+  if (typeof args[0] === 'number') {
+    if (typeof args[1] === 'number') {
+      return args[0] + args[1];
+    } else if (!args[1]) {
+      return (value) => {
+        if (typeof value === 'number') {
+          return args[0] + value;
+        }
+        return undefined;
+      };
+    }
+  }
+  return undefined;
+};
+```
+
+(arguments-optional.js)
+
+I feel like I created a mess of this one. There has to be a way better way to accomplish this. I first create a variable ```args``` to store the passed arguments, ignoring ESLint errors to not edit the way the function is originally setup (no arguments). I then test if the first argument type is a number or not, then I test if the second argument is a number or not; if it is I add the first argument to the second and return it. If there is not I return the ```value``` as a closure and if the value is a number add it to the first argument and return that.
+
+I'm still not too sure how closures work. This is something I will have to learn more about.

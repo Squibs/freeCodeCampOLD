@@ -3,13 +3,21 @@
 ## Front-End
 
 VSCode
-- Debugger for Chrome
+- Auto Rename Tag
+- BetterWhitespace
 - ESLint
   - (Node NPM ESLint)
     - (Node NPM ESLint - AirBnB)
 - Git History (git log)
-- HTML Snippets
-- vscode-icons
+- Lorem ipsum
+- Markdown TOC
+- open-in-browser
+- Path Intellisense
+- Project Manager
+- Settings Sync
+- SVG Viewer
+- VS Color Picker
+- vscode-random
 
 Node
 - NPM
@@ -21,10 +29,13 @@ HTML
 - DOM
 - JS
   - jQuery
+  - ESLint
+    - AirBnB Style Guide
+  - AJAX
+    - API
+  - Regular Expressions
 - Frameworks
   - Bootstrap
-- AJAX
-  - API
 
 Git
 - Git Bash
