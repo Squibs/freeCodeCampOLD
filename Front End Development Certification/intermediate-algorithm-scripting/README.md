@@ -67,7 +67,7 @@ return sum;
 
 (sum-numbers-range.js)
 
-I believe the point of this algorithm was to help understand the use of the ```reduce()``` method. However I do not believe I have a full understanding of this method after coming up with my solution using this method. There are several other ways to go about solving this algorithm. One method which would have solved this even easier, which I probably should have remembered better from high school, is using summation (((max + min)(max - min + 1))/2).
+I believe the point of this algorithm was to help understand the use of the `reduce()` method. However I do not believe I have a full understanding of this method after coming up with my solution using this method. There are several other ways to go about solving this algorithm. One method which would have solved this even easier, which I probably should have remembered better from high school, is using summation (((max + min)(max - min + 1))/2).
 
 ---
 
@@ -82,7 +82,7 @@ const diffArray = function (arr1, arr2) {
 
 (diff-two-arrays.js)
 
-This one was challenging for me. The last algorithm had me thinking I should use the ```reduce()``` method for the solution of this. I got to the point where I could filter out the duplicates, but I was missing a way to remove both numbers if they were duplicates. In the end I ended up having to seek additional answers outside of the method documentation. That's where I learned about the includes method.
+This one was challenging for me. The last algorithm had me thinking I should use the `reduce()` method for the solution of this. I got to the point where I could filter out the duplicates, but I was missing a way to remove both numbers if they were duplicates. In the end I ended up having to seek additional answers outside of the method documentation. That's where I learned about the includes method.
 
 ---
 
@@ -154,7 +154,7 @@ const whatIsInAName = function (collection, source) {
 
 (wherefore-art-thou.js)
 
-This one again took me a while to get to a point where I was understanding how I should go about finding a solution. At the start I was looping through collection and source, while source was converted to an array of keys, with two for loops. Then I was comparing the keys in the currently selected object in collection with those of in source; however I could not find a way to do this for the sources that had multiple keys/values. I had peek at the answer to find a better solution than what I was trying to create. Using the ```filter()``` method was the correct choice for this algorithm, much like it was for the previous two algorithms. Using a for loop with the ```filter()``` method allows for the correct arguments for the if statement to be made and allow the correct object properties to be filtered out.
+This one again took me a while to get to a point where I was understanding how I should go about finding a solution. At the start I was looping through collection and source, while source was converted to an array of keys, with two for loops. Then I was comparing the keys in the currently selected object in collection with those of in source; however I could not find a way to do this for the sources that had multiple keys/values. I had peek at the answer to find a better solution than what I was trying to create. Using the `filter()` method was the correct choice for this algorithm, much like it was for the previous two algorithms. Using a for loop with the `filter()` method allows for the correct arguments for the if statement to be made and allow the correct object properties to be filtered out.
 
 ---
 
@@ -184,7 +184,7 @@ const myReplace = function (str, before, after) {
 
 For this algorithm, since the previous algorithms were mainly working with arrays, I figured I should do the same here. I converted the passed string to an array and used the map method to iterate through the created array replacing the current value with the passed after variable if it was equal to the before value. The replaced value was checked for capitalization before replacing so the value replacing the before value would keep the same casing.
 
-Checking the provided solutions for this algorithm, I could have done this a bit simpler by using the string methods ```indexOf()``` and ```replace()``` rather than coverting everything to an array and using array methods.
+Checking the provided solutions for this algorithm, I could have done this a bit simpler by using the string methods `indexOf()` and `replace()` rather than coverting everything to an array and using array methods.
 
 ---
 
@@ -220,7 +220,7 @@ const translatePigLatin = function (str) {
 
 I itterate through the string and a vowels array and compare the two. If the first letter is a vowel just add way to the end of the string. If the word contains a vowel somewhere else slice up to the vowel and put it to the end of the string then add ay to the end of that. If there is no vowel in the word, just ad ay to the end of the word.
 
-After looking at the provided solutions for this, I'm learning that I take the long way around for most things right now. There are better solutions for itterating through strings and arrays and accomplishing what I'm doing in a more simplified / less lines of code way. I could use regex instead of an array to store the vowels and use the ```match()``` method to search for those letters in the string.
+After looking at the provided solutions for this, I'm learning that I take the long way around for most things right now. There are better solutions for itterating through strings and arrays and accomplishing what I'm doing in a more simplified / less lines of code way. I could use regex instead of an array to store the vowels and use the `match()` method to search for those letters in the string.
 
 ---
 
@@ -238,7 +238,7 @@ const pairElement = function (str) {
 
 (dna-pairing.js)
 
-I started off by putting each pair (AT TA CG GC) as an array in an array [[A,T],[T,A],[C,G],[G,C]]. Since I have been working with APIs in the previous intermediate front end development projects, I decided to turn the array of arrays into a format I'm now familiar with JSON / object. I then split the passed string into an array and used the ```map()``` method to itterate through the created array. I used the currently selected object/value of the ```map()``` method to return the correct DNA pair using the previously created object.
+I started off by putting each pair (AT TA CG GC) as an array in an array [[A,T],[T,A],[C,G],[G,C]]. Since I have been working with APIs in the previous intermediate front end development projects, I decided to turn the array of arrays into a format I'm now familiar with JSON / object. I then split the passed string into an array and used the `map()` method to itterate through the created array. I used the currently selected object/value of the `map()` method to return the correct DNA pair using the previously created object.
 
 ---
 
@@ -267,10 +267,10 @@ const fearNotLetter = function (str) {
 
 (missing-letters.js)
 
-I believe this might be one of the worst solutions I have come up with yet. After looking at the solutions and comparing to mine, I feel as if I'm going about everything incorrectly. I'm definitely using use the ```filter()``` method wrong in this case. I should have used the map function to iterrate through instead of using filter to iterate through the created array from using split on the passed string.
+I believe this might be one of the worst solutions I have come up with yet. After looking at the solutions and comparing to mine, I feel as if I'm going about everything incorrectly. I'm definitely using use the `filter()` method wrong in this case. I should have used the map function to iterrate through instead of using filter to iterate through the created array from using split on the passed string.
 
 <strong>Note from later:</strong>
-After looking back at this again compared to the intermediate code solution for this algorithm, I was on the right track with ```const string = str.split('').map(curObj => curObj.charCodeAt(0));```
+After looking back at this again compared to the intermediate code solution for this algorithm, I was on the right track with `const string = str.split('').map(curObj => curObj.charCodeAt(0));`
 
 This is the provided intermediate code solution:
 
@@ -290,7 +290,7 @@ function fearNotLetter(str) {
 }
 ```
 
-If I would have used the index along with the currently selected object in the ```map()``` method (or ```letter``` in the above solution), I think I could have gotten a solution very similar to this. Instead I decided to iterate again through the array using filter, instead of just using the ```map()``` method I already used.
+If I would have used the index along with the currently selected object in the `map()` method (or `letter` in the above solution), I think I could have gotten a solution very similar to this. Instead I decided to iterate again through the array using filter, instead of just using the `map()` method I already used.
 
 ---
 
@@ -313,18 +313,18 @@ I found this one to be quite easy; but of course looking at the provided solutio
 return typeof bool === 'boolean';
 ```
 
-If I want to find out if a variable matches a specific type of variable I can use the ```typeof``` operator. Then I can use something similar for any type of variable.
+If I want to find out if a variable matches a specific type of variable I can use the `typeof` operator. Then I can use something similar for any type of variable.
 
 Type | Result
 --- | ---
-```Undefined``` | "undefined"
-```Null``` | "object" (see below)
-```Boolean``` | "boolean"
-```Number``` | "number"
-```String``` | "string"
-```Symbol``` (New in ECMAScript 2015) | "symbol"
-```Host object``` (provided by the JS environment) | <em>Implementation-dependent</em>
-```Function object``` (implements [[Call]] in ECMA-262 terms) | "function"
+`Undefined` | "undefined"
+`Null` | "object" (see below)
+`Boolean` | "boolean"
+`Number` | "number"
+`String` | "string"
+`Symbol` (New in ECMAScript 2015) | "symbol"
+`Host object` (provided by the JS environment) | <em>Implementation-dependent</em>
+`Function object` (implements [[Call]] in ECMA-262 terms) | "function"
 Any other object | "object"
 
 ---
@@ -350,9 +350,9 @@ const uniteUnique = function (arr) {
 
 (sorted-union.js)
 
-For this solution I retrieved the multiple arguments with ```Array.from(arguments)```. In the future I would accomplish the same using rest parameters which were introduced in ES2015(ES6). Rest parameters would allow for a indefinite number of arguments, as an array, in a similar fashion to the above.
+For this solution I retrieved the multiple arguments with `Array.from(arguments)`. In the future I would accomplish the same using rest parameters which were introduced in ES2015(ES6). Rest parameters would allow for a indefinite number of arguments, as an array, in a similar fashion to the above.
 
-After retrieving the arguments I flattened the array a bit using reduce and concating the current value, from reduce, to the previous value. After the array is flattened to the appropriate level; I iterated through the flattened array with the ```forEach()``` method and pushed unique values to a new variable.
+After retrieving the arguments I flattened the array a bit using reduce and concating the current value, from reduce, to the previous value. After the array is flattened to the appropriate level; I iterated through the flattened array with the `forEach()` method and pushed unique values to a new variable.
 
 ---
 
@@ -368,9 +368,9 @@ const convertHTML = function (str) {
 
 (convert-html-entities.js)
 
-This is the first solution where I feel as though I accomplished everything in a manner that is appropriate out of all the previous intermediate algorithm challenges. I first set up an object relating the character codes to the html entities of which would be needed later to convert symbols in strings. I then used the ```replace()``` method with a regex expression to which would find matches that I would then convert to character codes to lookup in the previously created object and replace the symbol with the html entity.
+This is the first solution where I feel as though I accomplished everything in a manner that is appropriate out of all the previous intermediate algorithm challenges. I first set up an object relating the character codes to the html entities of which would be needed later to convert symbols in strings. I then used the `replace()` method with a regex expression to which would find matches that I would then convert to character codes to lookup in the previously created object and replace the symbol with the html entity.
 
-Looking at the solutions for this particular algorithm / challenge, I feel as though I gave a pretty close solution to the 'advanced' solution. The given solution spliting the passed string into an array and using the map function to then use a object with direct symbol lookups rather than charcode lookups. I originally was going to do that, but stopped when I got to the apostrophe (') as I was not sure if doing ```'\'': '&apos;'``` would cause an issue with the escape character being in there. Switching to the way the solution has the object I would be able to remove one method from my return line ```.charCodeAt(0)```
+Looking at the solutions for this particular algorithm / challenge, I feel as though I gave a pretty close solution to the 'advanced' solution. The given solution spliting the passed string into an array and using the map function to then use a object with direct symbol lookups rather than charcode lookups. I originally was going to do that, but stopped when I got to the apostrophe (') as I was not sure if doing `'\'': '&apos;'` would cause an issue with the escape character being in there. Switching to the way the solution has the object I would be able to remove one method from my return line `.charCodeAt(0)`
 
 ---
 
@@ -388,15 +388,17 @@ const spinalCase = function (str) {
 
 This challenge listed regex (regular expressions) as a 'helpful link' so I figured I should complete this challenge using regex. I split this into two parts, because I'm unsure of how to, or even if I can, combine these two parts together. 
 
-I take the passed string and use the ```replace()``` method to put in spaces between lowercase letters and uppercase letters that are right next to each other. I used a special replacement pattern (```$&```) for the ```replace()``` method which as far as I can tell you can write a string next to this to have inserted at the matched point / characters. I will have to look into this special replacement pattern as well as others. I put in a space following the pattern to put in the space needed.
+I take the passed string and use the `replace()` method to put in spaces between lowercase letters and uppercase letters that are right next to each other. I used a special replacement pattern (`$&`) for the `replace()` method which as far as I can tell you can write a string next to this to have inserted at the matched point / characters. I will have to look into this special replacement pattern as well as others. I put in a space following the pattern to put in the space needed.
 
-Next I take the modified string, which is just added spaces, and split that string into an array with the ```split()``` method. I split the string at any whitespace, underscore, or hyphen. I then immediately join the string using a hyphen. In writing that, I probably didn't even need to split at each hyphen previously.
+Next I take the modified string, which is just added spaces, and split that string into an array with the `split()` method. I split the string at any whitespace, underscore, or hyphen. I then immediately join the string using a hyphen. In writing that, I probably didn't even need to split at each hyphen previously.
 
-Taking a look at the solutions, I definitely could have combined my regular expressions. 
+Taking a look at the solutions, I definitely could have combined my regular expressions.
+
 ```JavaScript
 return str.split(/\s|_|(?=[A-Z])/).join('-').toLowerCase()
 ``` 
-This is the provided 'advanced' solution. I was pretty close to achieving this. I believe if I understood regular expressions more I would have been able to come up with exactly this. Leave out the hyphen, and use this version of the ```?=``` quantifier. Where I use this quantifier ```/[a-z](?=[A-Z])/g``` I'm selecting a lowercase letter followed immediately by an uppercase letter. I'm assuming the given solution's version is selecting anything that is followed by a capital letter.
+
+This is the provided 'advanced' solution. I was pretty close to achieving this. I believe if I understood regular expressions more I would have been able to come up with exactly this. Leave out the hyphen, and use this version of the `?=` quantifier. Where I use this quantifier `/[a-z](?=[A-Z])/g` I'm selecting a lowercase letter followed immediately by an uppercase letter. I'm assuming the given solution's version is selecting anything that is followed by a capital letter.
 
 ---
 
@@ -464,7 +466,7 @@ const sumPrimes = function (num) {
 
 This one was probably the hardest for me yet. I had to look up a lot of help for this. In creating my solution; I found ways to tell if a number was prime, another round-about way to see if a number was prime, however, I could not figure out a reliable way to generate prime numbers without having duplicate numbers appear seamingly randomly. I found out about the <em>Sieve of Eratosthenes</em> and from there had to study how people where using it in javascript to generate prime numbers.
 
-After I generated prime numbers from 2 up to the passed number or lower, I then used the ```reduce()``` method to add up all the prime numbers, which were stored in an array, and returned that value.
+After I generated prime numbers from 2 up to the passed number or lower, I then used the `reduce()` method to add up all the prime numbers, which were stored in an array, and returned that value.
 
 This is one I think I will have to return to in the future to better understand what it is I'm doing here. This is the first challenge out of the basic and intermediate algorithm challenges that I feel a bit lost on.
 
@@ -525,7 +527,7 @@ const findElement = function (arr, func) {
 
 (finders-keepers-revised.js)
 
-I take the passed array and use the ```find()``` method to find the value which meets the criteria of the passed function and return the first value that does.
+I take the passed array and use the `find()` method to find the value which meets the criteria of the passed function and return the first value that does.
 
 Taking a look at the answers, I believe I found a much simpler method than the provided answers. Upon looking at the comments for further answers, someone listed this as their answer:
 
@@ -533,7 +535,7 @@ Taking a look at the answers, I believe I found a much simpler method than the p
 return arr.find(func);
 ```
 
-This takes what I came up with and makes it even shorter. Just when I thought I came up with as optimal solution as I could, it just goes to show that there is always another, better way to accomplish the same thing; especially as I am still learning. As far as I can tell since the ```find()``` method has a description similar to this: "<em>Returns the value of the first element in an array that pass a test</em>"; it is possible to just skip defining the ```value``` predicate and stating to return a value running through another function... and just put the function there. The function going into the ```find()``` method as an example for this challenge would be something like: ```findElement([..., function(num) { return num % 2 === 0; });``` or rewritten as: ```findElement(..., num => num % 2 === 0);```. The function already is declaring that it will accept a num variable and return true or false depending on the equation; so I guess the ```find()``` method will just automatically pass each value in order in the array to this function and then return the first value that passes that functions test.
+This takes what I came up with and makes it even shorter. Just when I thought I came up with as optimal solution as I could, it just goes to show that there is always another, better way to accomplish the same thing; especially as I am still learning. As far as I can tell since the `find()` method has a description similar to this: "<em>Returns the value of the first element in an array that pass a test</em>"; it is possible to just skip defining the `value` predicate and stating to return a value running through another function... and just put the function there. The function going into the `find()` method as an example for this challenge would be something like: `findElement([..., function(num) { return num % 2 === 0; });` or rewritten as: `findElement(..., num => num % 2 === 0);`. The function already is declaring that it will accept a num variable and return true or false depending on the equation; so I guess the `find()` method will just automatically pass each value in order in the array to this function and then return the first value that passes that functions test.
 
 And looking at the definition / usage of the method:
 
@@ -577,7 +579,7 @@ This is exactly what I was trying to accomplish at the start of the algorithm ch
 ```JavaScript
 return arr.slice(arr.findIndex(func) >= 0 ? arr.findIndex(func) : []]);
 ```
-Which I now realize exactly why this was not working. The conditional statement within the ```slice()``` method is stating what the method should slice out and not return from the entire ```dropElements()``` method. I'm not sure why I was thinking that way, it was just a simple mistake. I feel as though I was so very close to getting this exact answer, and if I would have just sat there and thought about it for a minute I probably would have gotten it.
+Which I now realize exactly why this was not working. The conditional statement within the `slice()` method is stating what the method should slice out and not return from the entire `dropElements()` method. I'm not sure why I was thinking that way, it was just a simple mistake. I feel as though I was so very close to getting this exact answer, and if I would have just sat there and thought about it for a minute I probably would have gotten it.
 
 ---
 
@@ -598,7 +600,7 @@ const steamrollArray = function (arr) {
 (steamroller.js)
 
 I already stumbled across how to do this when doing the <em>Sorted Union</em> algorithm challenge. I simply went back to that challenge and modified what I already had used.
-Previously I used: ```.reduce((prev, curr) => prev.concat(curr));```. This time I needed to run this multiple times to flatten the array completely, so I use an argument in the ```concat()``` method. If the current value is an array flatten the array with the same function that is already flattening the array; otherwise concat the current value to the previous value. Importantly set the ```concat()``` method to an inital value of an empty array ```[]``` as well.
+Previously I used: `.reduce((prev, curr) => prev.concat(curr));`. This time I needed to run this multiple times to flatten the array completely, so I use an argument in the `concat()` method. If the current value is an array flatten the array with the same function that is already flattening the array; otherwise concat the current value to the previous value. Importantly set the `concat()` method to an inital value of an empty array `[]` as well.
 
 ---
 
@@ -640,7 +642,7 @@ const binaryAgent = function (str) {
 };
 ```
 
-I create an array for an 8 bit value. I then split the passed string into an array at each space. I then ```map()``` the array and for each value I use a for loop to get each character and add that value times the current 8-bit/binary position (binary[i]) to a sum. I then return the charcode of the sum and repeat this for each value. I then join the array and return it as a string. I used instructions mainly from [here](https://www.kidscodecs.com/a-binary-numbers-tutorial-with-1-and-0/) as I never knew how to translate binary.
+I create an array for an 8 bit value. I then split the passed string into an array at each space. I then `map()` the array and for each value I use a for loop to get each character and add that value times the current 8-bit/binary position (binary[i]) to a sum. I then return the charcode of the sum and repeat this for each value. I then join the array and return it as a string. I used instructions mainly from [here](https://www.kidscodecs.com/a-binary-numbers-tutorial-with-1-and-0/) as I never knew how to translate binary.
 
 Looking at the provided solutions, particularly the advanced solution:
 
@@ -650,7 +652,7 @@ function binaryAgent(str) {
 }
 ```
 
-This is very interesting to see for me. I learned earlier about using ```...variable``` to retrieve multiple arguments from an array. But this would be put in the functions accepted arguments and wasn't used the other way around like this. I also didn't know you could do this on a single passed argument, a string in this case, I will have to learn more about the ```spread syntax```, this seems pretty useful.
+This is very interesting to see for me. I learned earlier about using `...variable` to retrieve multiple arguments from an array. But this would be put in the functions accepted arguments and wasn't used the other way around like this. I also didn't know you could do this on a single passed argument, a string in this case, I will have to learn more about the `spread syntax`, this seems pretty useful.
 
 ---
 
@@ -675,11 +677,11 @@ It took me a while to figure out once part of this; below is an example of what 
   })}\n`);
 ```
 
-fI was trying to figure out how to compare a value to ```Boolean```. The reason being, in the <em>basic algorithm challenges</em> specificaly <strong>Falsy Bouncer</strong>. From the beginning I knew that particular algorithm would have the answer for this one. I spent a while trying to do something such as ```return value[pre] === Boolean``` in the above example. It wasn't working, while I thought it would as in <strong>Falsy Bouncer</strong>. I also tried ```return typeof (value[pre]) === 'boolean'``` as I thought that could work for telling if a value was falsy/truthy or not. In the end I learned about ```!!``` (not not).
+fI was trying to figure out how to compare a value to `Boolean`. The reason being, in the <em>basic algorithm challenges</em> specificaly <strong>Falsy Bouncer</strong>. From the beginning I knew that particular algorithm would have the answer for this one. I spent a while trying to do something such as `return value[pre] === Boolean` in the above example. It wasn't working, while I thought it would as in <strong>Falsy Bouncer</strong>. I also tried `return typeof (value[pre]) === 'boolean'` as I thought that could work for telling if a value was falsy/truthy or not. In the end I learned about `!!` (not not).
 
-I already knew about ```!``` (not), which I have used several times before; but then while searching for the opposite of ```!``` I found ```!!```. This allowed me to test just ```!!value[pre]``` and return ```true``` or ```false``` correctly for this challenge. While ```!value[pre]``` would return the opposite of what I wanted to return.
+I already knew about `!` (not), which I have used several times before; but then while searching for the opposite of `!` I found `!!`. This allowed me to test just `!!value[pre]` and return `true` or `false` correctly for this challenge. While `!value[pre]` would return the opposite of what I wanted to return.
 
-In the end I came up with my solution above: ```return collection.every(value => !!value[pre]);``` which correctly returns true or false; and can tell truthy values (the opposite of the <strong>Falsy Bouncer</strong> challenge).
+In the end I came up with my solution above: `return collection.every(value => !!value[pre]);` which correctly returns true or false; and can tell truthy values (the opposite of the <strong>Falsy Bouncer</strong> challenge).
 
 
 ---
@@ -709,6 +711,6 @@ const addTogether = function () {
 
 (arguments-optional.js)
 
-I feel like I created a mess of this one. There has to be a way better way to accomplish this. I first create a variable ```args``` to store the passed arguments, ignoring ESLint errors to not edit the way the function is originally setup (no arguments). I then test if the first argument type is a number or not, then I test if the second argument is a number or not; if it is I add the first argument to the second and return it. If there is not I return the ```value``` as a closure and if the value is a number add it to the first argument and return that.
+I feel like I created a mess of this one. There has to be a way better way to accomplish this. I first create a variable `args` to store the passed arguments, ignoring ESLint errors to not edit the way the function is originally setup (no arguments). I then test if the first argument type is a number or not, then I test if the second argument is a number or not; if it is I add the first argument to the second and return it. If there is not I return the `value` as a closure and if the value is a number add it to the first argument and return that.
 
 I'm still not too sure how closures work. This is something I will have to learn more about.
