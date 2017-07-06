@@ -183,3 +183,112 @@ After going through the first few of cases for this challenge in the same manner
 Looking at the provided solutions, I feel as though I provided an adequate solution for this algorithm challenge. Of course as usual my solution could definitely be improved, but it does do what this challenge is asking for.
 
 ---
+
+##### Exact Change
+
+```JavaScript
+// CONDENSED VERSION - NO CONSOLE OUTPUTS
+const checkCashRegister = function (price, cash, cid) {
+  const change = [];
+  let owe = Number(cash - price).toFixed(2);
+  let worth = ['ONE HUNDRED', 'TWENTY', 'TEN', 'FIVE', 'ONE', 'QUARTER', 'DIME', 'NICKEL', 'PENNY'];
+  const cashRegister = {
+    PENNY: {
+      value: 0.01,
+      amount: 0,
+    },
+    NICKEL: {
+      value: 0.05,
+      amount: 0,
+    },
+    DIME: {
+      value: 0.10,
+      amount: 0,
+    },
+    QUARTER: {
+      value: 0.25,
+      amount: 0,
+    },
+    ONE: {
+      value: 1.00,
+      amount: 0,
+    },
+    FIVE: {
+      value: 5.00,
+      amount: 0,
+    },
+    TEN: {
+      value: 10.00,
+      amount: 0,
+    },
+    TWENTY: {
+      value: 20.00,
+      amount: 0,
+    },
+    'ONE HUNDRED': {
+      value: 100.00,
+      amount: 0,
+    },
+  };
+
+  cid.forEach((e) => {
+    const currency = cashRegister[e[0]];
+    currency.amount = Math.ceil(e[1] / currency.value);
+  });
+
+  worth = worth.filter((e) => {
+    const currency = cashRegister[e];
+    if (currency.value < owe && currency.amount !== 0) {
+      let amount = 0;
+      while (currency.value <= owe && currency.amount !== 0) {
+        amount += 1;
+        currency.amount -= 1;
+        owe = Number(owe).toFixed(2) - Number(currency.value).toFixed(2);
+      }
+      change.push([e, parseFloat(Number(amount * currency.value).toFixed(2))]);
+    }
+    if (currency.amount === 0) { return false; }
+    return true;
+  });
+
+  if (owe === 0 && worth.length === 0) { return 'Closed'; }
+  if (owe > 0) { return 'Insufficient Funds'; }
+
+  return change;
+};
+```
+
+(exact-change.js)
+
+For this challenge I wanted to work with an object, because there have not been too many challenges where they were used; and every challenge has been using arrays and their methods.
+
+The passed cash register <em>inventory</em> or the amount of demonimations the cash register has, was in a two dimensional array. Converting this array to values in my `cashRegister` object is where I learned about some <em>experimental features</em> dealing with objects in JavaScript. I learned about `Object.entries()` and `Object.values()`. These two methods allow for iterating through objects without having to use a for loop such as `for (var key in obj)` or `for (const key of Object.keys(obj))`. Instead you would be able to do:
+```JavaScript
+Object.entries(obj).forEach(([key, value]) => {
+  console.log('do things other than a console log')
+});
+```
+
+Or use `Object.values` similarly; or even combine the two in some way.
+
+I avoided using these for now. Instead I opted for using what I already knew in conjunction with my `cashRegister` object. My object stores each denomination/currency, their value, and the amount of each denomination passed to the function.
+
+After storing any denomination related information, I use the `filter()` method to go through a `worth` array I created which is holding the denomination names in order from highest value to lowest value. I had to create this array, because I opted to not use experimental object methods. Iterating through this array I check if the currency value is equel to or less than that of what is owed and if the currency amount is not 0. 
+
+If the checks pass I have a while loop that counts the amount of a currency that will be given to the customer, subtracts one of the currency from the cash register and updates the amount still owed to the customer. This loop is controlled by if the currency value is less than or equal to the amount owed and if the currency amount is not 0.
+
+Once that loop finishes the change type and amount is pushed to the change variable in an array. And finally if the currency amount is equal to 0, return false to remove it from the worth array. Otherwise return true to leave it in the array.
+
+Finally I have two final checks after that ordeal. If the amount still owed to the customer is equal to 0 and the worth array length is 0, meaning there is nothing left in the register, return 'closed'. If the amount owed is greater than 0 return 'insufficient funds'. Finally, after all that return the change array.
+
+Explanation over.
+
+While my solution does work for these cases there are some specific cases, where this would not work. I learned this out once I finished and was looking for the bonfire / provided solution for this challenge. I came across [this post](https://medium.freecodecamp.org/exact-solution-for-exact-change-81e1d23bfe58) which pretty much states what is wrong with my answer.
+
+In a case where 30 cents in change is needed and the cash register has 10 dimes and 10 quarters, my solution will return insufficient funds instead of 3 dimes due to the way I created it. Going from the largest denomination to the smallest causes this issue.
+
+I would solve this issue in my final check of the amount owed (`owe > 0`). In this check before I return 'insufficient funds' I would loop back through my worth array backwards and check for the correct change in a similar way as before. If that then fails, then I would finally return 'insufficient funds'. However, I'm not sure if there would be more cases in doing this, where the same problem could show up.
+
+In the end, I'm glad I decided to use an object in this algorithm challenge instead of just arrays. I got to learn just a bit more about working with objects.
+
+---
