@@ -292,3 +292,47 @@ I would solve this issue in my final check of the amount owed (`owe > 0`). In th
 In the end, I'm glad I decided to use an object in this algorithm challenge instead of just arrays. I got to learn just a bit more about working with objects.
 
 ---
+
+##### Inventory Update
+
+```JavaScript
+// CONDENSED VERSION - NO CONSOLE OUTPUTS
+const updateInventory = function (arr1, arr2) {
+  let combined = [];
+  let curInv = arr1.concat(arr2).sort((a, b) => {
+    if (a[1] === b[1]) {
+      return 0;
+    }
+    return a[1] < b[1] ? -1 : 1;
+  }).reduce((prev, cur) => {
+    const change = combined;
+    let flag = true;
+    if (combined.length === 0) {
+      combined.push(prev);
+    }
+    combined.forEach((value, index) => {
+      if (value[1] === cur[1]) {
+        combined[index][0] += cur[0];
+        flag = false;
+      }
+    });
+    if (flag) {
+      combined.push(cur);
+      flag = true;
+    }
+    return combined;
+  });
+
+  return curInv;
+};
+```
+
+(inventory-update.js)
+
+For this challenge, I combined the two passed arrays into one with the `concat()` method. I then sorted the combined two dimensional array with the `sort()` method and from there I did the rest with the `reduce()` method.
+
+I needed two things for of the `reduce()` method to get this to work. I needed an outside variable `combined` and a `flag` to control what was being pushed to `combined`. If the length of combined is 0 I would push the previous array into it, this would only run on the first iteration of the `reduce()` method. I then used the `forEach()` method on combined and tested if the current value of the `forEach()` method is equal to the current value of the `reduce()` method and if it is combine the total in the previous and current arrays and set the flag to false. Finally if the flag is true push the current value (to control repeats).
+
+Looking at the provided solutions it is easy to see where I could have improved. Instead of using the `reduce()` method, I could have used nested `forEach()` methods. I had the right idea in using a flag to control whether or not to push the current value or not, I just was not sure how to go about comparing the values. I think my major issue / flaw / querk for this challenge was combining the two arrays right off the bat and trying to work with the combined array. It would have been much simpler to work with the two separate passed arrays.
+
+---
