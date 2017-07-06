@@ -336,3 +336,78 @@ I needed two things for of the `reduce()` method to get this to work. I needed a
 Looking at the provided solutions it is easy to see where I could have improved. Instead of using the `reduce()` method, I could have used nested `forEach()` methods. I had the right idea in using a flag to control whether or not to push the current value or not, I just was not sure how to go about comparing the values. I think my major issue / flaw / querk for this challenge was combining the two arrays right off the bat and trying to work with the combined array. It would have been much simpler to work with the two separate passed arrays.
 
 ---
+
+##### No Repeats Please
+
+```JavaScript
+// CONDENSED VERSION - NO CONSOLE OUTPUTS
+const permAlone = function (str) {
+  const array = str.split('');
+  let counter = 0;
+
+  const swap = function (a, b) {
+    const holder = array[a];
+    array[a] = array[b];
+    array[b] = holder;
+  };
+
+  const heap = function (number) {
+    const regex = /([a-zA-z])\1+/g;
+
+    if (number === 1 && !regex.test(array.join(''))) {
+      counter += 1;
+    } else {
+      for (let i = 0; i !== number; i += 1) {
+        heap(number - 1);
+        if (number % 2 === 0) {
+          swap(i, number - 1);
+        } else {
+          swap(0, number - 1);
+        }
+      }
+    }
+  };
+  heap(array.length);
+  return counter;
+};
+```
+
+(no-repeats-please.js)
+
+This one was very difficult. I repeatedly tried to solve this with what I already know, and failed many times. Many of my attempts included this:
+
+```JavaScript
+const factorial = function (number) {
+  if (number === 1) { return 1; }
+  return number * factorial(number - 1);
+};
+```
+
+I thought this would bring me success in solving this challenge on my own. It is just a simple method to get the factorial of a number. I tried many times to figure out how to get to the correct outcome for each case for this challenge, but I just could not figure it out on my own. I then tried using [this guide](https://stackoverflow.com/questions/32282607/permutations-excluding-repeated-characters/36178855#36178855) in order to create my solution. Ultimately I think my major problem with this algorithm challenge is not understanding how exactly to calculate the answers outside of programming; having basic fundamental knowledge in how to solve this with pen and paper. No matter what I did I could not understand how to get the answer for `permAlone("aaabb") should return 12`. Sure I can easily write out the combinations or visualize them, but I do not know the correct formula to calculate the answer.
+
+In the end I had to resort to using [Heap's Algorithm](https://en.wikipedia.org/wiki/Heap%27s_algorithm) in order to solve this challenge:
+
+```JavaScript
+procedure generate(n : integer, A : array of any):
+    if n = 1 then
+          output(A)
+    else
+        for i := 0; i < n - 1; i += 1 do
+            generate(n - 1, A)
+            if n is even then
+                swap(A[i], A[n-1])
+            else
+                swap(A[0], A[n-1])
+            end if
+        end for
+        generate(n - 1, A)
+    end if
+```
+
+Even having this pseudocode, I struggled to find a way to use this in order to solve this problem. I tried many different ways to use this algorithm in-conjunction with the passed string, but couldn't find an appropriate way to get the answer I desired. Many times I created infinite loops in my translated version of `Heap's Algorithm` or simply created stack overflow errors. Getting to the solution without additional help was just not going to happen.
+
+I ended up watching many videos on using `Heap's Algorithm` and ended up borrowing ideas from different sources until I managed to solve this challenge. I do not feel all that successful at the end of this challenge; however this was a great learning experience. `Heap's Algorithm` is a great example of recursion with [multiple branches](https://discourse-user-assets.s3.amazonaws.com/optimized/2X/7/76fac6502eaadd8e1c63b223163ddcceef6cd3cf_1_690x387.png).
+
+Looking for the provided solution to this challenge, it looks like a great deal of people struggled to solve this one as well; that makes me feel a bit better about how I went about solving it. In the end I believe that using either of `Heap's Algorithms` (recursive or non-recursive) is probably one of the more optimal ways to solve this challenge.
+
+---
