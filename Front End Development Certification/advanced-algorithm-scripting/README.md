@@ -455,3 +455,34 @@ I enjoyed this one. While it is not hard, it was about how I learned how to prog
 I do not feel like there is much to say about this challenge. Comparing my answer to the provided one; there is little different. Only real difference is I'm using string concatenations to set fullName, while the provided solution uses the `+` operator.
 
 ---
+
+##### Map the Debris
+
+```JavaScript
+// CONDENSED VERSION - NO CONSOLE OUTPUTS
+const orbitalPeriod = function (arr) {
+  const GM = 398600.4418;
+  const earthRadius = 6367.4447;
+  const array = [];
+
+  arr.forEach((value) => {
+    array.push({ name: value.name, orbitalPeriod: Math.round(2 * Math.PI * Math.sqrt(Math.pow(earthRadius + value.avgAlt, 3) / GM)) });
+  });
+
+  return array;
+};
+```
+
+(map-the-debris.js)
+
+This one truly was not much of a challenge. The hardest part was finding the correct formula in order to calculate the desired results. I ended up finding [this equation](https://en.wikipedia.org/wiki/Orbital_period#Small_body_orbiting_a_central_body) for a small body orbiting a central body. I then converted the equation to make sense for the already provided function variables:
+
+```
+2π * square √((avgAlt + earthRadius)³ / GM)
+```
+
+I then went and solved the challenge pretty easily. It just requries a lot of `Math` object calls in order to calcuate the correct result. You then push an object with the correct values into an array and return that array.
+
+Looking at the provided answer, they give a hint as to the formula to use. That would have been nice to have a bit earlier; however, it didn't very long to find and convert for myself.
+
+---
