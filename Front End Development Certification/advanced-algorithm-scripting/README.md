@@ -411,3 +411,47 @@ I ended up watching many videos on using `Heap's Algorithm` and ended up borrowi
 Looking for the provided solution to this challenge, it looks like a great deal of people struggled to solve this one as well; that makes me feel a bit better about how I went about solving it. In the end I believe that using either of `Heap's Algorithms` (recursive or non-recursive) is probably one of the more optimal ways to solve this challenge.
 
 ---
+
+##### Make a Person
+
+```JavaScript
+// CONDENSED VERSION - NO CONSOLE OUTPUTS
+const Person = function (firstAndLast) {
+  let fullName = firstAndLast;
+
+  this.getFirstName = function () {
+    return fullName.split(' ')[0];
+  };
+
+  this.getLastName = function () {
+    return fullName.split(' ')[1];
+  };
+
+  this.getFullName = function () {
+    return fullName;
+  };
+
+  this.setFirstName = function (first) {
+    fullName = `${first} ${fullName.split(' ')[1]}`;
+  };
+
+  this.setLastName = function (last) {
+    fullName = `${fullName.split(' ')[0]} ${last}`;
+  };
+
+  this.setFullName = function (firstAndLast) {
+    fullName = firstAndLast;
+  };
+};
+
+const bob = new Person('Bob Ross');
+bob.getFullName();
+```
+
+(make-a-person.js)
+
+I enjoyed this one. While it is not hard, it was about how I learned how to program in the first place. While this is not using getters and setters, which it honestly should probably be doing; this challenge showed me how JavaScript handled setting and getting before getters and setters were introduced.
+
+I do not feel like there is much to say about this challenge. Comparing my answer to the provided one; there is little different. Only real difference is I'm using string concatenations to set fullName, while the provided solution uses the `+` operator.
+
+---
