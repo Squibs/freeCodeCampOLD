@@ -4,8 +4,8 @@ console.log('If an item cannot be found, add the new item and quantity into the 
 const updateInventory = function (arr1, arr2) {
   console.log(`Passed Arrays:\n${JSON.stringify(arr1)},\n${JSON.stringify(arr2)}`);
 
-  let combined = [];
-  let curInv = arr1.concat(arr2).sort((a, b) => {
+  const combined = [];
+  const curInv = arr1.concat(arr2).sort((a, b) => {
     if (a[1] === b[1]) {
       return 0;
     }
