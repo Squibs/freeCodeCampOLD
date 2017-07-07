@@ -2,13 +2,13 @@
 
 ## [Front End Development Certification](https://github.com/Squibs/freeCodeCamp/tree/master/Front%20End%20Development%20Certification#intermediate-algorithms) (Go Back)
 
-<img src="" height="400" alt="Screenshot of algorithms"/>
+<img src="../../Images/screenshot-advanced-algorithms.png" height="400" alt="Screenshot of algorithms"/>
 
 ### Advanced Algorithms
 
-<em>INSERT COMPLETION DATE HERE</em>
+<em>Completed July 6, 2017</em>
 
-WORDS WORDS WORDS WORDS WORDS WORDS WORDS WORDS WORDS WORDS WORDS WORDS WORDS WORDS WORDS WORDS WORDS WORDS WORDS WORDS WORDS WORDS WORDS WORDS WORDS WORDS WORDS WORDS WORDS WORDS WORDS WORDS WORDS WORDS WORDS WORDS WORDS WORDS WORDS WORDS WORDS WORDS WORDS WORDS WORDS WORDS WORDS WORDS WORDS WORDS WORDS WORDS WORDS WORDS WORDS WORDS WORDS WORDS WORDS WORDS WORDS WORDS WORDS WORDS WORDS WORDS WORDS WORDS WORDS WORDS WORDS WORDS WORDS WORDS WORDS WORDS WORDS WORDS WORDS WORDS WORDS WORDS WORDS WORDS WORDS WORDS WORDS WORDS WORDS WORDS WORDS WORDS WORDS WORDS WORDS WORDS WORDS WORDS WORDS WORDS WORDS WORDS WORDS WORDS WORDS WORDS WORDS WORDS WORDS WORDS WORDS WORDS WORDS WORDS WORDS WORDS WORDS WORDS WORDS WORDS WORDS WORDS WORDS WORDS WORDS WORDS WORDS WORDS WORDS WORDS WORDS WORDS WORDS WORDS WORDS WORDS WORDS WORDS WORDS WORDS WORDS WORDS WORDS WORDS WORDS
+This was the last series of algorithm challenges for the Front End Development Certificaton. It was quite something going through all the beginner, intermediate and now advanced challenges. I learned quite a lot, and I know I still have much to learn yet. I will be moving onto the beta freeCodeCamp website completely, once I finish the rest of the Front End Development Certificaton.
 
 <img src="../../Images/icon-javascript.png" height="48" alt="JavaScript Icon"/>
 
@@ -19,9 +19,19 @@ WORDS WORDS WORDS WORDS WORDS WORDS WORDS WORDS WORDS WORDS WORDS WORDS WORDS WO
 <b>Advanced Algorithms</b>
 
 1. [General Notes](#general-notes)
+2. [Validate US Telephone Numbers](#validate-us-telephone-numbers)
+3. [Record Collection](#record-collection)
+4. [Symmetric Difference](#symmetric-difference)
+5. [Exact Change](#exact-change)
+6. [Inventory Update](#inventory-update)
+7. [No Repeats Please](#no-repeats-please)
+8. [Make a Person](#make-a-person)
+9. [Map the Debris](#map-the-debris)
+10. [Pairwise](#pairwise)
+
 
 ##### General Notes
-WORDS WORDS WORDS WORDS WORDS WORDS WORDS WORDS WORDS WORDS WORDS WORDS WORDS WORDS WORDS WORDS WORDS WORDS WORDS WORDS WORDS WORDS WORDS WORDS WORDS WORDS WORDS WORDS WORDS WORDS WORDS WORDS WORDS WORDS WORDS WORDS WORDS WORDS WORDS WORDS WORDS WORDS WORDS WORDS WORDS WORDS WORDS WORDS WORDS WORDS WORDS WORDS WORDS WORDS WORDS WORDS WORDS WORDS WORDS WORDS WORDS WORDS WORDS WORDS WORDS
+I created these solutions based on my current level of knowledge. Any of these solutions can most definitely be improved, I am by no means an expert at this at all. I believe I have come up with some decent alternative solutions for these advanced algorithm challenges.
 
 ---
 
@@ -486,3 +496,32 @@ I then went and solved the challenge pretty easily. It just requries a lot of `M
 Looking at the provided answer, they give a hint as to the formula to use. That would have been nice to have a bit earlier; however, it didn't very long to find and convert for myself.
 
 ---
+
+##### Pairwise
+
+```JavaScript
+// CONDENSED VERSION - NO CONSOLE OUTPUTS
+const pairwise = function (arr, arg) {
+  const array = arr;
+  let sum = 0;
+
+  array.forEach((value, index) => {
+    for (let i = 0; i < array.length; i += 1) {
+      if (value + array[i] === arg && index !== i) {
+        sum += index + i;
+        array[i] = 'banana'; // could use delete, but i'd rather make it a banana
+        array[index] = 'banana';
+        break;
+      }
+    }
+  });
+
+  return sum;
+};
+```
+
+(pairwise.js)
+
+This challenge wasn't all that hard either. Once again as long as I understand what is happening I think finding a solution is quite simple. For this challenge I stored the passed array in new variable `array`, as I would be changing values of the passed array and due to AirBnB / eslint standards you should not really be assigning values to passed arguments / variables. I then create a sum variable to hold the desired outcome for this challenge.
+
+I iterate through the passed array with the `forEach()` method and create a for loop to through the same array again (I can probably do this in a better way rather than using a for loop). If the current value in the `forEach()` method is equal to the current value in the for loop and the indices are not the same, I would push the sum of their indices to the `sum` variable and set each element equal to 'banana'. I could also just use delete to remove the element, but I wanted to add a touch of yellow to my modified array. I then break out of the loop, otherwise it would continue to compare values with the value that was now removed (it would keep the value, as I'm not directly modifying that variable). I then return once the iterations are complete.
