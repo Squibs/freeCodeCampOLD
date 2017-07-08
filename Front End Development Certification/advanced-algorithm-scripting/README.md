@@ -464,6 +464,42 @@ I enjoyed this one. While it is not hard, it was about how I learned how to prog
 
 I do not feel like there is much to say about this challenge. Comparing my answer to the provided one; there is little different. Only real difference is I'm using string concatenations to set fullName, while the provided solution uses the `+` operator.
 
+I recreated this in ES6 syntax, to see how it would work. Everything works the exact same, the way you create the Person class is a little different however:
+
+```JavaScript
+class Person {
+  constructor(firstAndLast) {
+    this.fullName = firstAndLast;
+  }
+
+  getFirstName() {
+    return this.fullName.split(' ')[0];
+  }
+
+  getLastName() {
+    return this.fullName.split(' ')[1];
+  }
+
+  getFullName() {
+    return this.fullName;
+  }
+
+  setFirstName(first) {
+    this.fullName = `${first} ${this.fullName.split(' ')[1]}`;
+  }
+
+  setLastName(last) {
+    this.fullName = `${this.fullName.split(' ')[0]} ${last}`;
+  }
+
+  setFullName(firstAndLast) {
+    this.fullName = firstAndLast;
+  }
+}
+```
+
+After testing this revised part some more it seems that there is no real way to set private variables with this quite yet, or I just can't seem to find a real answer to do it. There really is not a whole lot of examples or information in general on using the ES6 way of classes. I tried fiddling with getters and setters in this as well, but it really didn't seem to make that much of a difference. `bob.fullName` was always accessible in my recreation when it should not be.
+
 ---
 
 ##### Map the Debris

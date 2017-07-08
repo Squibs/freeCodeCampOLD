@@ -51,6 +51,8 @@ console.log(`bob.getLastName: ${bob.getFullName()} (should return "Haskell Curry
 console.log(`bob.getLastName: ${bob.getFirstName()} (should return "Haskell").`);
 console.log(`bob.getLastName: ${bob.getLastName()} (should return "Curry").`);
 
+console.log(`bob.fullName: ${bob.fullName} (should return undefined).`);
+
 /* CONDENSED VERSION - NO CONSOLE OUTPUTS
 
   const Person = function (firstAndLast) {
