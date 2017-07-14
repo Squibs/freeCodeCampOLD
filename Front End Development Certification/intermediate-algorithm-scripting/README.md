@@ -23,7 +23,7 @@ This was a series of challenges much like the <em>Basic Algorithm Challenges</em
 3. [Diff Two Arrays](#diff-two-arrays)
 4. [Roman Numeral Converter](#roman-numeral-converter)
 5. [Wherefore art thou](#wherefore-art-thou)
-6. [Wherefore art thou](#wherefore-art-thou-1)
+6. [Search and Repalce](#search-and-replace)
 7. [Pig Latin](#pig-latin)
 8. [DNA Pairing](#dna-pairing)
 9. [Missing Letters](#missing-letters)
@@ -158,7 +158,7 @@ This one again took me a while to get to a point where I was understanding how I
 
 ---
 
-##### Wherefore art thou
+##### Search and Replace
 ```JavaScript
 // CONDENSED VERSION - NO CONSOLE OUTPUTS
 const myReplace = function (str, before, after) {
