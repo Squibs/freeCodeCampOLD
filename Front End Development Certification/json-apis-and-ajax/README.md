@@ -1,6 +1,6 @@
 # [freeCodeCamp](https://github.com/Squibs/freeCodeCamp#freecodecamp)
 
-## [Front End Development Certification](https://github.com/Squibs/freeCodeCamp/tree/master/Front%20End%20Development%20Certification#json-apis-and-ajax) (Go Back)
+## [Front End Development Projects](https://github.com/Squibs/freeCodeCamp/tree/master/Front%20End%20Development%20Certification#json-apis-and-ajax) (Go Back)
 
 <img src="../../Images/screenshot-json-apis-and-ajax.png" height="400" alt="Screenshot of my JSON APIs and Ajax notes"/>
 
