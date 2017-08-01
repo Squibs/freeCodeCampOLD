@@ -1,6 +1,6 @@
 # [freeCodeCamp](https://github.com/Squibs/freeCodeCamp#freecodecamp)
 
-## [Front End Development Certification](https://github.com/Squibs/freeCodeCamp/tree/master/Front%20End%20Development%20Certification#cat-photo-app-responsive-design-with-bootstrap) (Go Back)
+## [Front End Development Projects](https://github.com/Squibs/freeCodeCamp/tree/master/Front%20End%20Development%20Certification#cat-photo-app-responsive-design-with-bootstrap) (Go Back)
 
 <a href="https://codepen.io/Sulph/pen/qmPGwq" target="_blank"><img src="../../Images/screenshot-cat-photo-app.png" height="400" alt="Screenshot of a cat photo app built with html"/></a>
 
