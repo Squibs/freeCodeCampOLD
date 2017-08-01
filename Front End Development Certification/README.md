@@ -1,13 +1,18 @@
 # [freeCodeCamp](https://github.com/Squibs/freeCodeCamp#freecodecamp)
 ## Front End Development Certification
 
+### [JavaScript Calculator](https://github.com/Squibs/js-calculator)
+<a href="https://github.com/Squibs/js-calculator" target="_blank"><img src="../Images/screenshot-js-calculator.png" height="300" alt="Screenshot of my JavaScript calculator app / website."/></a>
+
+---
+
 ### [Advanced Algorithms](https://github.com/Squibs/freeCodeCamp/tree/master/Front%20End%20Development%20Certification/advanced-algorithm-scripting)
-<a href="https://github.com/Squibs/freeCodeCamp/tree/master/Front%20End%20Development%20Certification/advanced-algorithm-scripting" target="_blank"><img src="../Images/screenshot-advanced-algorithms.png" height="300" alt="Screenshot of my advanced algorithms"/></a>
+<a href="https://github.com/Squibs/freeCodeCamp/tree/master/Front%20End%20Development%20Certification/advanced-algorithm-scripting" target="_blank"><img src="../Images/screenshot-advanced-algorithms.png" height="300" alt="Screenshot of my advanced algorithms."/></a>
 
 ---
 
 ### [Intermediate Algorithms](https://github.com/Squibs/freeCodeCamp/tree/master/Front%20End%20Development%20Certification/intermediate-algorithm-scripting)
-<a href="https://github.com/Squibs/freeCodeCamp/tree/master/Front%20End%20Development%20Certification/intermediate-algorithm-scripting" target="_blank"><img src="../Images/screenshot-intermediate-algorithms.png" height="300" alt="Screenshot of my intermediate algorithms"/></a>
+<a href="https://github.com/Squibs/freeCodeCamp/tree/master/Front%20End%20Development%20Certification/intermediate-algorithm-scripting" target="_blank"><img src="../Images/screenshot-intermediate-algorithms.png" height="300" alt="Screenshot of my intermediate algorithms."/></a>
 
 ---
 
