@@ -1,6 +1,6 @@
 # [freeCodeCamp](https://github.com/Squibs/freeCodeCamp#freecodecamp)
 
-## [Front End Development Certification](https://github.com/Squibs/freeCodeCamp/tree/master/Front%20End%20Development%20Certification#jquery-playground) (Go Back)
+## [Front End Development Projects](https://github.com/Squibs/freeCodeCamp/tree/master/Front%20End%20Development%20Certification#jquery-playground) (Go Back)
 
 <a href="https://codepen.io/Sulph/pen/aWEyaK" target="_blank"><img src="../../Images/screenshot-jquery-playground.png" height="400" alt="Screenshot of jQuery Playground html and jQuery source code."/></a>
 
