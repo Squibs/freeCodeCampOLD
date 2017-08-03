@@ -1,6 +1,11 @@
 # [freeCodeCamp](https://github.com/Squibs/freeCodeCamp#freecodecamp)
 ## Front End Development Certification
 
+### [Pomodoro Clock](https://github.com/Squibs/pomodoro-clock)
+<a href="https://github.com/Squibs/pomodoro-clock" target="_blank"><img src="../Images/screenshot-pomodoro-clock.png" height="350" alt="Screenshot of my Pomodoro clock app / website."/></a>
+
+---
+
 ### [JavaScript Calculator](https://github.com/Squibs/js-calculator)
 <a href="https://github.com/Squibs/js-calculator" target="_blank"><img src="../Images/screenshot-js-calculator.png" height="300" alt="Screenshot of my JavaScript calculator app / website."/></a>
 
