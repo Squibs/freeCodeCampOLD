@@ -1,6 +1,11 @@
 # [freeCodeCamp](https://github.com/Squibs/freeCodeCamp#freecodecamp)
 ## Front End Development Certification
 
+### [Simon Game](https://github.com/Squibs/simon-game)
+<a href="https://github.com/Squibs/simon-game" target="_blank"><img src="../Images/screenshot-simon-game.png" height="350" alt="Screenshot of my Simon Game app / website."/></a>
+
+---
+
 ### [Pomodoro Clock](https://github.com/Squibs/pomodoro-clock)
 <a href="https://github.com/Squibs/pomodoro-clock" target="_blank"><img src="../Images/screenshot-pomodoro-clock.png" height="350" alt="Screenshot of my Pomodoro clock app / website."/></a>
 
