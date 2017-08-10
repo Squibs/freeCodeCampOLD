@@ -1,8 +1,10 @@
 # [freeCodeCamp](https://github.com/Squibs/freeCodeCamp#freecodecamp)
 ## Front End Development Certification
 
-### [My Front End Development Certificaton]()
-<a href="https://github.com/Squibs/freeCodeCamp/tree/master/Front%20End%20Development%20Certification/my-front-end-development-certifcation" target="_blank"><img src="../Images/my-front-end-development-certificate.png" height="350" alt="My front end develoment certification."/></a>
+### [My Front End Development Certificaton](https://github.com/Squibs/freeCodeCamp/tree/master/Front%20End%20Development%20Certification/my-front-end-development-certification)
+<a href="https://github.com/Squibs/freeCodeCamp/tree/master/Front%20End%20Development%20Certification/my-front-end-development-certification" target="_blank"><img src="../Images/my-front-end-development-certificate.png" height="350" alt="My front end develoment certification."/></a>
+
+---
 
 ### [Simon Game](https://github.com/Squibs/simon-game)
 <a href="https://github.com/Squibs/simon-game" target="_blank"><img src="../Images/screenshot-simon-game.png" height="350" alt="Screenshot of my Simon Game app / website."/></a>
