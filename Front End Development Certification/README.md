@@ -6,6 +6,11 @@
 
 ---
 
+### [Tic-Tac-Toe](https://github.com/Squibs/tic-tac-toe)
+<a href="https://github.com/Squibs/tic-tac-toe" target="_blank"><img src="../Images/screenshot-tic-tac-toe.png" height="350" alt="Screenshot of my Tic-Tac-Toe Game app / website."/></a>
+
+---
+
 ### [Pomodoro Clock](https://github.com/Squibs/pomodoro-clock)
 <a href="https://github.com/Squibs/pomodoro-clock" target="_blank"><img src="../Images/screenshot-pomodoro-clock.png" height="350" alt="Screenshot of my Pomodoro clock app / website."/></a>
 
