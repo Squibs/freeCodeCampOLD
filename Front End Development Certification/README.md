@@ -51,8 +51,8 @@
 
 ---
 
-### [Quote Machine](https://github.com/Squibs/quote-machine)
-<a href="https://github.com/Squibs/quote-machine" target="_blank"><img src="../Images/screenshot-quote-machine.png" height="300" alt="Screenshot of my Quote Machine project / website."/></a>
+### [Quote Machine](https://github.com/Squibs/quote-machine/tree/before-react)
+<a href="https://github.com/Squibs/quote-machine/tree/before-react" target="_blank"><img src="../Images/screenshot-quote-machine.png" height="300" alt="Screenshot of my Quote Machine project / website."/></a>
 
 ---
 
