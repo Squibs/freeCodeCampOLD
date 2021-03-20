@@ -1,6 +1,6 @@
 # [freeCodeCamp](https://github.com/Squibs/freeCodeCamp#freecodecamp)
 
-## [Front End Development Projects](https://github.com/Squibs/freeCodeCamp/tree/master/Front%20End%20Development%20Certification#basic-javascript) (Go Back)
+## [Front End Development Projects](https://github.com/Squibs/freeCodeCampOLD/tree/master/Front%20End%20Development%20Certification#basic-javascript) (Go Back)
 
 <img src="../../Images/screenshot-basic-javascript.png" height="400" alt="Screenshot of some JavaScript source code."/>
 
@@ -57,7 +57,7 @@ function ourTrueOrFalse(isItTrue) {
 ourTrueOrFalse(true);
 ```
 - The variable ourTrueOrFalse is set to true so when it is passed to the function it will trigger the return for "Yes, it's true".
--If statements just need to be true or false; so running a variable, set to true or false, through an if statment with the argument of just that variable.
+-If statements just need to be true or false; so running a variable, set to true or false, through an if statement with the argument of just that variable.
 	- Will determine the action based on the variable boolean value.
 
 In order for JavaScript to compare two different data types (for example, numbers and strings), it must convert one type to another. Once it does, however, it can compare terms as follows:
@@ -74,7 +74,7 @@ The strict equality (===) operator is similar to the equality operator (==) only
 2 === '2'	// false
 ```
 
-The logical or operator (||) returns true if either of the oeprands is true, otherwise it returns false.
+The logical or operator (||) returns true if either of the operands is true, otherwise it returns false.
 
 JavaScript objects are defined like this:
 
@@ -133,12 +133,12 @@ var folder1Contents = ourStorage.cabinet["top drawer"].folder1; // folder1Conten
 Use ```Math.random();``` to create a random decimal between 0 and 1.
 - ```return Math.floor(Math.random() * 10); // returns a number between 0 and 9```
 
-Regular Expressons (regex)
-- For example, if we wanted to find the word "the" in the string "The dog chased the cat", we could use the following reguar expression: ```/the/gi```.
+Regular Expressions (regex)
+- For example, if we wanted to find the word "the" in the string "The dog chased the cat", we could use the following regular expression: ```/the/gi```.
 	- List of Selectors:
 		- ```/``` Start and end of the regular expression.
 		- ```g``` Means global, which will return all matches in the string and not just the first one
-		- ```i``` Means that we want to ignroe the casing of letters when searching.
+		- ```i``` Means that we want to ignore the casing of letters when searching.
 		- ```\d``` Retrieves one digit (e.g.) numbers 0 to 9 in a string
 			- ```/\d/g``` Retrieves one digit in a string
 		- ```+``` Allows for matches of one or more digits.
@@ -190,7 +190,7 @@ console.log("After: " + JSON.stringify(testArr));
 ```
 
 ###### Counting Cards
-A mini-challenge within the basic javascript lessions. Create a function that will state whether or not to hold or bet after a sequence of cards.
+A mini-challenge within the basic javascript lessons. Create a function that will state whether or not to hold or bet after a sequence of cards.
 
 ```Javascript
 var count = 0;

@@ -1,6 +1,6 @@
 # [freeCodeCamp](https://github.com/Squibs/freeCodeCamp#freecodecamp)
 
-## [Front End Development Projects](https://github.com/Squibs/freeCodeCamp/tree/master/Front%20End%20Development%20Certification#object-oriented-and-functional-programming) (Go Back)
+## [Front End Development Projects](https://github.com/Squibs/freeCodeCampOLD/tree/master/Front%20End%20Development%20Certification#object-oriented-and-functional-programming) (Go Back)
 
 <img src="../../Images/screenshot-oop.png" height="400" alt="Screenshot of JavaScript objects."/>
 
@@ -66,7 +66,7 @@ var myCar = new Car(4, 8, 1); // 4 wheels, 8 seats, 1 engine
 
 Objects have their own attributes (called properties) and functions (called methods).
 - Objects can have private properties and methods.
-	- To do this, decalre the variable instead of using the this.property() method.
+	- To do this, declare the variable instead of using the this.property() method.
 		- var speed = 10; instead of this.speed = 10;
 
 
@@ -129,7 +129,7 @@ array.sort(function(a, b) {
   return b - a; 
 }); 
 
-// b-a sorts from larget to smallest ... use a - b for smallest to largest; if no compare (callback) function is passed in it will convert the values to strings and sort alphabetically.
+// b-a sorts from largest to smallest ... use a - b for smallest to largest; if no compare (callback) function is passed in it will convert the values to strings and sort alphabetically.
 ```
 
 ---

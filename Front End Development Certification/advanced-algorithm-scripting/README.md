@@ -1,6 +1,6 @@
 # [freeCodeCamp](https://github.com/Squibs/freeCodeCamp#freecodecamp)
 
-## [Front End Development Projects](https://github.com/Squibs/freeCodeCamp/tree/master/Front%20End%20Development%20Certification#intermediate-algorithms) (Go Back)
+## [Front End Development Projects](https://github.com/Squibs/freeCodeCampOLD/tree/master/Front%20End%20Development%20Certification#intermediate-algorithms) (Go Back)
 
 <img src="../../Images/screenshot-advanced-algorithms.png" height="400" alt="Screenshot of algorithms"/>
 
@@ -8,7 +8,7 @@
 
 <em>Completed July 6, 2017</em>
 
-This was the last series of algorithm challenges for the Front End Development Certificaton. It was quite something going through all the beginner, intermediate and now advanced challenges. I learned quite a lot, and I know I still have much to learn yet. I will be moving onto the beta freeCodeCamp website completely, once I finish the rest of the Front End Development Certificaton.
+This was the last series of algorithm challenges for the Front End Development Certification. It was quite something going through all the beginner, intermediate and now advanced challenges. I learned quite a lot, and I know I still have much to learn yet. I will be moving onto the beta freeCodeCamp website completely, once I finish the rest of the Front End Development Certification.
 
 <img src="../../Images/icon-javascript.png" height="48" alt="JavaScript Icon"/>
 
@@ -92,7 +92,7 @@ freeCodeCamp states that this example, the intermediate code solution, is an exa
 
 In the end I feel I completed this challenge in a way quite similar to the way freeCodeCamp would be expecting someone to finish this challenge at this stage of progress through the Front End Development Certification.
 
-In the future I would probably split the regular expression up into different variables and them combine them later to keep things neater and give more explaination of what is happening; and to make changes to the expression easier. This could also mean in longer strands of regex, previously variables could be used again instead of rewriting what may be already written if everything is formatted in a logical way.
+In the future I would probably split the regular expression up into different variables and them combine them later to keep things neater and give more explanation of what is happening; and to make changes to the expression easier. This could also mean in longer strands of regex, previously variables could be used again instead of rewriting what may be already written if everything is formatted in a logical way.
 
 ---
 
@@ -272,7 +272,7 @@ const checkCashRegister = function (price, cash, cid) {
 
 For this challenge I wanted to work with an object, because there have not been too many challenges where they were used; and every challenge has been using arrays and their methods.
 
-The passed cash register <em>inventory</em> or the amount of demonimations the cash register has, was in a two dimensional array. Converting this array to values in my `cashRegister` object is where I learned about some <em>experimental features</em> dealing with objects in JavaScript. I learned about `Object.entries()` and `Object.values()`. These two methods allow for iterating through objects without having to use a for loop such as `for (var key in obj)` or `for (const key of Object.keys(obj))`. Instead you would be able to do:
+The passed cash register <em>inventory</em> or the amount of denominations the cash register has, was in a two dimensional array. Converting this array to values in my `cashRegister` object is where I learned about some <em>experimental features</em> dealing with objects in JavaScript. I learned about `Object.entries()` and `Object.values()`. These two methods allow for iterating through objects without having to use a for loop such as `for (var key in obj)` or `for (const key of Object.keys(obj))`. Instead you would be able to do:
 ```JavaScript
 Object.entries(obj).forEach(([key, value]) => {
   console.log('do things other than a console log')
@@ -283,7 +283,7 @@ Or use `Object.values` similarly; or even combine the two in some way.
 
 I avoided using these for now. Instead I opted for using what I already knew in conjunction with my `cashRegister` object. My object stores each denomination/currency, their value, and the amount of each denomination passed to the function.
 
-After storing any denomination related information, I use the `filter()` method to go through a `worth` array I created which is holding the denomination names in order from highest value to lowest value. I had to create this array, because I opted to not use experimental object methods. Iterating through this array I check if the currency value is equel to or less than that of what is owed and if the currency amount is not 0. 
+After storing any denomination related information, I use the `filter()` method to go through a `worth` array I created which is holding the denomination names in order from highest value to lowest value. I had to create this array, because I opted to not use experimental object methods. Iterating through this array I check if the currency value is equal to or less than that of what is owed and if the currency amount is not 0. 
 
 If the checks pass I have a while loop that counts the amount of a currency that will be given to the customer, subtracts one of the currency from the cash register and updates the amount still owed to the customer. This loop is controlled by if the currency value is less than or equal to the amount owed and if the currency amount is not 0.
 
@@ -343,7 +343,7 @@ For this challenge, I combined the two passed arrays into one with the `concat()
 
 I needed two things for of the `reduce()` method to get this to work. I needed an outside variable `combined` and a `flag` to control what was being pushed to `combined`. If the length of combined is 0 I would push the previous array into it, this would only run on the first iteration of the `reduce()` method. I then used the `forEach()` method on combined and tested if the current value of the `forEach()` method is equal to the current value of the `reduce()` method and if it is combine the total in the previous and current arrays and set the flag to false. Finally if the flag is true push the current value (to control repeats).
 
-Looking at the provided solutions it is easy to see where I could have improved. Instead of using the `reduce()` method, I could have used nested `forEach()` methods. I had the right idea in using a flag to control whether or not to push the current value or not, I just was not sure how to go about comparing the values. I think my major issue / flaw / querk for this challenge was combining the two arrays right off the bat and trying to work with the combined array. It would have been much simpler to work with the two separate passed arrays.
+Looking at the provided solutions it is easy to see where I could have improved. Instead of using the `reduce()` method, I could have used nested `forEach()` methods. I had the right idea in using a flag to control whether or not to push the current value or not, I just was not sure how to go about comparing the values. I think my major issue / flaw / quirk for this challenge was combining the two arrays right off the bat and trying to work with the combined array. It would have been much simpler to work with the two separate passed arrays.
 
 ---
 
@@ -527,7 +527,7 @@ This one truly was not much of a challenge. The hardest part was finding the cor
 2π * square √((avgAlt + earthRadius)³ / GM)
 ```
 
-I then went and solved the challenge pretty easily. It just requries a lot of `Math` object calls in order to calcuate the correct result. You then push an object with the correct values into an array and return that array.
+I then went and solved the challenge pretty easily. It just requires a lot of `Math` object calls in order to calculate the correct result. You then push an object with the correct values into an array and return that array.
 
 Looking at the provided answer, they give a hint as to the formula to use. That would have been nice to have a bit earlier; however, it didn't very long to find and convert for myself.
 

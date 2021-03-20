@@ -1,6 +1,6 @@
 # [freeCodeCamp](https://github.com/Squibs/freeCodeCamp#freecodecamp)
 
-## [Front End Development Projects](https://github.com/Squibs/freeCodeCamp/tree/master/Front%20End%20Development%20Certification#cat-photo-app-responsive-design-with-bootstrap) (Go Back)
+## [Front End Development Projects](https://github.com/Squibs/freeCodeCampOLD/tree/master/Front%20End%20Development%20Certification#cat-photo-app-responsive-design-with-bootstrap) (Go Back)
 
 <a href="https://codepen.io/Sulph/pen/qmPGwq" target="_blank"><img src="../../Images/screenshot-cat-photo-app.png" height="400" alt="Screenshot of a cat photo app built with html"/></a>
 
@@ -33,7 +33,7 @@ Notes include generalized notes abut the project as well as notes about things I
 - Use # to stylize IDs for example ```#thick-green-border { }```.
 - Styles are read from top to bottom; stylings declared after previous ones will take precedence.
 	- ```<div class="brown-font blue-font">``` Whichever class was declared second will take precedence.
-- In-line styles will take precednce over CSS classes and stylings at top
+- In-line styles will take precedence over CSS classes and stylings at top
 
 Summary of precedence:
 Body Element < CSS Class < Order of CSS Classes < ID Stylings < In-line Styles < !important

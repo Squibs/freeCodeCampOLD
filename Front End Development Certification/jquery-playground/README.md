@@ -1,6 +1,6 @@
 # [freeCodeCamp](https://github.com/Squibs/freeCodeCamp#freecodecamp)
 
-## [Front End Development Projects](https://github.com/Squibs/freeCodeCamp/tree/master/Front%20End%20Development%20Certification#jquery-playground) (Go Back)
+## [Front End Development Projects](https://github.com/Squibs/freeCodeCampOLD/tree/master/Front%20End%20Development%20Certification#jquery-playground) (Go Back)
 
 <a href="https://codepen.io/Sulph/pen/aWEyaK" target="_blank"><img src="../../Images/screenshot-jquery-playground.png" height="400" alt="Screenshot of jQuery Playground html and jQuery source code."/></a>
 
@@ -25,8 +25,8 @@ A playground used in several freeCodeCamp challenges teaching about how to use v
 ##### Basic Notes
 
 - jQuery is the most popular JavaScript tool of all time.
-- All jQuery is done outside of HTML; in the head, or a seperate JavaScript file 
-- Code put inside a document.dready function will run as soon as your browser has loaded your page.
+- All jQuery is done outside of HTML; in the head, or a separate JavaScript file 
+- Code put inside a document.ready function will run as soon as your browser has loaded your page.
 	- Without the document ready function the code may run before your HTML is rendered which could cause bugs
 - All jQuery functions start with $ (dollar sign operator, bling)
 - ```$("STRING")``` is a selector; ```.addClass("animated bounce");``` is adding a css class to the selected
@@ -61,7 +61,7 @@ Function chaining allows you to combine jQuery functions. For example:
 
 jQuery can use CSS Selectors to target elements:
 - ```target:nth-child(n)```
-	- ```$(".target:nth-child(3)").addClass("animated bounce");``` Targets the 3rd child of the target and addes the classes "animated" and "bounce".
+	- ```$(".target:nth-child(3)").addClass("animated bounce");``` Targets the 3rd child of the target and adds the classes "animated" and "bounce".
 - ```.target:odd``` Selects odd-numbered elements
 	- jQuery is zero-indexed, meaning that, counter-intuitively, ```:odd``` selects the second, fourth and so on elements (index: 1, 3, 5...).
 - ```target:even``` Selects even-numbered elements (index: 0, 2, 4...).

@@ -1,6 +1,6 @@
 # [freeCodeCamp](https://github.com/Squibs/freeCodeCamp#freecodecamp)
 
-## [Front End Development Projects](https://github.com/Squibs/freeCodeCamp/tree/master/Front%20End%20Development%20Certification#basic-algorithms) (Go Back)
+## [Front End Development Projects](https://github.com/Squibs/freeCodeCampOLD/tree/master/Front%20End%20Development%20Certification#basic-algorithms) (Go Back)
 
 <img src="../../Images/screenshot-basic-algorithms.png" height="400" alt="Screenshot of algorithms"/>
 
@@ -58,7 +58,7 @@ function reverseString(str) {
 ```
 (reverse-a-string.js)
 
-I saw two ways of handling this challenge. Either use the array methods I learned just moments before starting these challenges, or using for/while loops to go through each string and retrieve characters and put them back together. In my mind everything seemd it would be much simpler. In summary I took the string, split it into an array by each character, reversed the array, and put the array back into a string using the array methods taught in the object oriented and functional programming lessons. (split(), reverse(), join())
+I saw two ways of handling this challenge. Either use the array methods I learned just moments before starting these challenges, or using for/while loops to go through each string and retrieve characters and put them back together. In my mind everything seemed it would be much simpler. In summary I took the string, split it into an array by each character, reversed the array, and put the array back into a string using the array methods taught in the object oriented and functional programming lessons. (split(), reverse(), join())
 
 ---
 
@@ -135,7 +135,7 @@ function findLongestWord(str) {
 ```
 (longest-word.js)
 
-I was able to use what I was trying to do in the Check for Palindromes challenge, so this challenge did not take me very long at all. I used the same loop to step through each character in the string and compare that character to a regex for whitespace. If there was whitespace it would increase my arrayControl variable by one, which controls which element of the array I am currently going to replace, and reset a character count variable. If the character was not equal to a whitespace I would increase a character count variable and set the current array element equal to it. In the end this would create an array of numbers each number representing the length of each word in the argument string. From here the array would be sorted lowest to highest with the sorth() method. I would then use the array .pop() method to return the length of the largest word in the string.
+I was able to use what I was trying to do in the Check for Palindromes challenge, so this challenge did not take me very long at all. I used the same loop to step through each character in the string and compare that character to a regex for whitespace. If there was whitespace it would increase my arrayControl variable by one, which controls which element of the array I am currently going to replace, and reset a character count variable. If the character was not equal to a whitespace I would increase a character count variable and set the current array element equal to it. In the end this would create an array of numbers each number representing the length of each word in the argument string. From here the array would be sorted lowest to highest with the sort() method. I would then use the array .pop() method to return the length of the largest word in the string.
 
 ---
 
@@ -250,7 +250,7 @@ function truncateString(str, num) {
 }
 ```
 (truncate-string.js)
-This is the first alogrithm that I felt the need to use a toggle due to the many conditions that were given for whether or not to add "..." to the truncated string. I checked whether or not the passed num was greater than three and whether or not the string length minus three (for the "...") were true or false and acted accordingly. Then I needed to use a toggle alongside this for very-short, 1-letter strings that may have been passed, which would help control whether or not to concact ("...") onto the end of the truncated string to be returned. I feel I accomplished this algorithm fairly poorly, however it still works.
+This is the first algorithm that I felt the need to use a toggle due to the many conditions that were given for whether or not to add "..." to the truncated string. I checked whether or not the passed num was greater than three and whether or not the string length minus three (for the "...") were true or false and acted accordingly. Then I needed to use a toggle alongside this for very-short, 1-letter strings that may have been passed, which would help control whether or not to concact ("...") onto the end of the truncated string to be returned. I feel I accomplished this algorithm fairly poorly, however it still works.
 
 ---
 
@@ -306,7 +306,7 @@ function mutation(arr) {
 ```
 (mutations.js)
 
-The tricky part of this one was figuring out where I was able to use the toLowerCase() method. Being able to put it in-between an array element selection was useful (arr[1].tolowercase[i]). I created a loop to itterate through the array and compare the first element in the array to each character in the second element in the array. If any of the comparisons returned -1, then I returned false, otherwise I returned true.
+The tricky part of this one was figuring out where I was able to use the toLowerCase() method. Being able to put it in-between an array element selection was useful (arr[1].tolowercase[i]). I created a loop to iterate through the array and compare the first element in the array to each character in the second element in the array. If any of the comparisons returned -1, then I returned false, otherwise I returned true.
 
 ---
 
@@ -319,7 +319,7 @@ function bouncer(arr) {
 ```
 (falsy-bouncer.js)
 
-Unfortunately I stumbled across the solution for this while looking up an easier way to filter boolean values rather than comparing against each falsy value seperately. I learned that the Boolean constructor can be used as a function for this case exactly and will remove an anything that can be considered falsy when used with the filter method. I learned that you can achieve the same in the same line as the return, cutting out the need for two lines of code for this solution turning it into one line.
+Unfortunately I stumbled across the solution for this while looking up an easier way to filter boolean values rather than comparing against each falsy value separately. I learned that the Boolean constructor can be used as a function for this case exactly and will remove an anything that can be considered falsy when used with the filter method. I learned that you can achieve the same in the same line as the return, cutting out the need for two lines of code for this solution turning it into one line.
 
 ---
 
@@ -343,7 +343,7 @@ function destroyer(arr) {
 ```
 (seek-and-destroy.js)
 
-This one was interesting due to the function calls passing more arguments than the function has declared to accept. The only reason I was able to solve this one was due to freeCodeCamp explicitly listing a page to the Arguments object, which has an example for this exact situation. I assigned the additional arguments to a variable and used a for loop to itterate through the passed arguments, which is just a single array with no nested array and compared it to the now stored corrected arguments and deleted the current element if they were equal to each other. This would effectively ignore the now nested array in the new arguments variable as the passed arr technically does not have a nested array.
+This one was interesting due to the function calls passing more arguments than the function has declared to accept. The only reason I was able to solve this one was due to freeCodeCamp explicitly listing a page to the Arguments object, which has an example for this exact situation. I assigned the additional arguments to a variable and used a for loop to iterate through the passed arguments, which is just a single array with no nested array and compared it to the now stored corrected arguments and deleted the current element if they were equal to each other. This would effectively ignore the now nested array in the new arguments variable as the passed arr technically does not have a nested array.
 
 ---
 
@@ -363,7 +363,7 @@ function getIndexToIns(arr, num) {
 ```
 (where-do-i-belong.js)
 
-This is a point where I have realized all my previous for loops, I never declared the i variable, and should from now on. This algorithm wasn't terribly hard; again it can probably be optimized in ways I'm just not capable of thinking of quite yet. I sorted the function from lowest to highest, used a for loop to itterate through the passed array and compared each value in the array to the passed number. If the array value was greater than the passed number I would return i, which would be the array index; otherwise I would return the length of the array, which would result in the last index value of the array being returned.
+This is a point where I have realized all my previous for loops, I never declared the i variable, and should from now on. This algorithm wasn't terribly hard; again it can probably be optimized in ways I'm just not capable of thinking of quite yet. I sorted the function from lowest to highest, used a for loop to iterate through the passed array and compared each value in the array to the passed number. If the array value was greater than the passed number I would return i, which would be the array index; otherwise I would return the length of the array, which would result in the last index value of the array being returned.
 
 ---
 
@@ -392,4 +392,4 @@ function rot13(str) {
 ```
 (caesars-cipher.js)
 
-This was the last algorithm challenge. This one involved using charCodeAt and fromCharCode in order to solve. I created a variable to store the decipher, used a loop to itterate through the passed string and checked if the current characters charcode was greater than 78 (13th letter in alphabet) or not. If it was greater than 78 I subtracted 13 from the characters charcode and added it to the decipher string. If it was less than 78 I added 13 to the charcode and did the same. If the charcode was above 90 or less than 65 I left the charcode alone and added it to the decipher string. 
+This was the last algorithm challenge. This one involved using charCodeAt and fromCharCode in order to solve. I created a variable to store the decipher, used a loop to iterate through the passed string and checked if the current characters charcode was greater than 78 (13th letter in alphabet) or not. If it was greater than 78 I subtracted 13 from the characters charcode and added it to the decipher string. If it was less than 78 I added 13 to the charcode and did the same. If the charcode was above 90 or less than 65 I left the charcode alone and added it to the decipher string. 

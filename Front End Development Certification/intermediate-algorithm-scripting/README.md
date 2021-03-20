@@ -1,6 +1,6 @@
 # [freeCodeCamp](https://github.com/Squibs/freeCodeCamp#freecodecamp)
 
-## [Front End Development Projects](https://github.com/Squibs/freeCodeCamp/tree/master/Front%20End%20Development%20Certification#intermediate-algorithms) (Go Back)
+## [Front End Development Projects](https://github.com/Squibs/freeCodeCampOLD/tree/master/Front%20End%20Development%20Certification#intermediate-algorithms) (Go Back)
 
 <img src="../../Images/screenshot-intermediate-algorithms.png" height="400" alt="Screenshot of algorithms"/>
 
@@ -23,7 +23,7 @@ This was a series of challenges much like the <em>Basic Algorithm Challenges</em
 3. [Diff Two Arrays](#diff-two-arrays)
 4. [Roman Numeral Converter](#roman-numeral-converter)
 5. [Wherefore art thou](#wherefore-art-thou)
-6. [Search and Repalce](#search-and-replace)
+6. [Search and Replace](#search-and-replace)
 7. [Pig Latin](#pig-latin)
 8. [DNA Pairing](#dna-pairing)
 9. [Missing Letters](#missing-letters)
@@ -38,7 +38,7 @@ This was a series of challenges much like the <em>Basic Algorithm Challenges</em
 18. [Drop It](#drop-it)
 19. [Steamroller](#steamroller)
 20. [Binary Agents](#binary-agents)
-21. [Everytyhing Be True](#everytyhing-be-true)
+21. [Everything Be True](#everything-be-true)
 22. [Arguments Optional](#arguments-optional)
 
 
@@ -184,7 +184,7 @@ const myReplace = function (str, before, after) {
 
 For this algorithm, since the previous algorithms were mainly working with arrays, I figured I should do the same here. I converted the passed string to an array and used the map method to iterate through the created array replacing the current value with the passed after variable if it was equal to the before value. The replaced value was checked for capitalization before replacing so the value replacing the before value would keep the same casing.
 
-Checking the provided solutions for this algorithm, I could have done this a bit simpler by using the string methods `indexOf()` and `replace()` rather than coverting everything to an array and using array methods.
+Checking the provided solutions for this algorithm, I could have done this a bit simpler by using the string methods `indexOf()` and `replace()` rather than converting everything to an array and using array methods.
 
 ---
 
@@ -218,9 +218,9 @@ const translatePigLatin = function (str) {
 
 (pig-latin.js)
 
-I itterate through the string and a vowels array and compare the two. If the first letter is a vowel just add way to the end of the string. If the word contains a vowel somewhere else slice up to the vowel and put it to the end of the string then add ay to the end of that. If there is no vowel in the word, just ad ay to the end of the word.
+I iterate through the string and a vowels array and compare the two. If the first letter is a vowel just add way to the end of the string. If the word contains a vowel somewhere else slice up to the vowel and put it to the end of the string then add ay to the end of that. If there is no vowel in the word, just ad ay to the end of the word.
 
-After looking at the provided solutions for this, I'm learning that I take the long way around for most things right now. There are better solutions for itterating through strings and arrays and accomplishing what I'm doing in a more simplified / less lines of code way. I could use regex instead of an array to store the vowels and use the `match()` method to search for those letters in the string.
+After looking at the provided solutions for this, I'm learning that I take the long way around for most things right now. There are better solutions for iterating through strings and arrays and accomplishing what I'm doing in a more simplified / less lines of code way. I could use regex instead of an array to store the vowels and use the `match()` method to search for those letters in the string.
 
 ---
 
@@ -238,7 +238,7 @@ const pairElement = function (str) {
 
 (dna-pairing.js)
 
-I started off by putting each pair (AT TA CG GC) as an array in an array [[A,T],[T,A],[C,G],[G,C]]. Since I have been working with APIs in the previous intermediate front end development projects, I decided to turn the array of arrays into a format I'm now familiar with JSON / object. I then split the passed string into an array and used the `map()` method to itterate through the created array. I used the currently selected object/value of the `map()` method to return the correct DNA pair using the previously created object.
+I started off by putting each pair (AT TA CG GC) as an array in an array [[A,T],[T,A],[C,G],[G,C]]. Since I have been working with APIs in the previous intermediate front end development projects, I decided to turn the array of arrays into a format I'm now familiar with JSON / object. I then split the passed string into an array and used the `map()` method to iterate through the created array. I used the currently selected object/value of the `map()` method to return the correct DNA pair using the previously created object.
 
 ---
 
@@ -267,7 +267,7 @@ const fearNotLetter = function (str) {
 
 (missing-letters.js)
 
-I believe this might be one of the worst solutions I have come up with yet. After looking at the solutions and comparing to mine, I feel as if I'm going about everything incorrectly. I'm definitely using use the `filter()` method wrong in this case. I should have used the map function to iterrate through instead of using filter to iterate through the created array from using split on the passed string.
+I believe this might be one of the worst solutions I have come up with yet. After looking at the solutions and comparing to mine, I feel as if I'm going about everything incorrectly. I'm definitely using use the `filter()` method wrong in this case. I should have used the map function to iterate through instead of using filter to iterate through the created array from using split on the passed string.
 
 <strong>Note from later:</strong>
 After looking back at this again compared to the intermediate code solution for this algorithm, I was on the right track with `const string = str.split('').map(curObj => curObj.charCodeAt(0));`
@@ -370,7 +370,7 @@ const convertHTML = function (str) {
 
 This is the first solution where I feel as though I accomplished everything in a manner that is appropriate out of all the previous intermediate algorithm challenges. I first set up an object relating the character codes to the html entities of which would be needed later to convert symbols in strings. I then used the `replace()` method with a regex expression to which would find matches that I would then convert to character codes to lookup in the previously created object and replace the symbol with the html entity.
 
-Looking at the solutions for this particular algorithm / challenge, I feel as though I gave a pretty close solution to the 'advanced' solution. The given solution spliting the passed string into an array and using the map function to then use a object with direct symbol lookups rather than charcode lookups. I originally was going to do that, but stopped when I got to the apostrophe (') as I was not sure if doing `'\'': '&apos;'` would cause an issue with the escape character being in there. Switching to the way the solution has the object I would be able to remove one method from my return line `.charCodeAt(0)`
+Looking at the solutions for this particular algorithm / challenge, I feel as though I gave a pretty close solution to the 'advanced' solution. The given solution splitting the passed string into an array and using the map function to then use a object with direct symbol lookups rather than charcode lookups. I originally was going to do that, but stopped when I got to the apostrophe (') as I was not sure if doing `'\'': '&apos;'` would cause an issue with the escape character being in there. Switching to the way the solution has the object I would be able to remove one method from my return line `.charCodeAt(0)`
 
 ---
 
@@ -464,7 +464,7 @@ const sumPrimes = function (num) {
 
 (sum-all-primes.js)
 
-This one was probably the hardest for me yet. I had to look up a lot of help for this. In creating my solution; I found ways to tell if a number was prime, another round-about way to see if a number was prime, however, I could not figure out a reliable way to generate prime numbers without having duplicate numbers appear seamingly randomly. I found out about the <em>Sieve of Eratosthenes</em> and from there had to study how people where using it in javascript to generate prime numbers.
+This one was probably the hardest for me yet. I had to look up a lot of help for this. In creating my solution; I found ways to tell if a number was prime, another round-about way to see if a number was prime, however, I could not figure out a reliable way to generate prime numbers without having duplicate numbers appear seemingly randomly. I found out about the <em>Sieve of Eratosthenes</em> and from there had to study how people where using it in javascript to generate prime numbers.
 
 After I generated prime numbers from 2 up to the passed number or lower, I then used the `reduce()` method to add up all the prime numbers, which were stored in an array, and returned that value.
 
@@ -497,7 +497,7 @@ const smallestCommons = function (arr) {
 
 (smallest-multiple.js)
 
-This one was hard as well for me. I started out by putting the range of each passed argument into a new array and trying to work from that. Once I couldn't figure that out I moved onto finding new solutions. I created another method that loops through each number between the passed argument and tests whether or not the remainder of the total divided by the current number is not equal to 0. It returns false until they all match. The control for this method is in a while loop that addes the maximum to the total each time it returns false. This eventually leads to having the lowest common multiple in the range of numbers.
+This one was hard as well for me. I started out by putting the range of each passed argument into a new array and trying to work from that. Once I couldn't figure that out I moved onto finding new solutions. I created another method that loops through each number between the passed argument and tests whether or not the remainder of the total divided by the current number is not equal to 0. It returns false until they all match. The control for this method is in a while loop that adds the maximum to the total each time it returns false. This eventually leads to having the lowest common multiple in the range of numbers.
 
 ---
 
@@ -600,7 +600,7 @@ const steamrollArray = function (arr) {
 (steamroller.js)
 
 I already stumbled across how to do this when doing the <em>Sorted Union</em> algorithm challenge. I simply went back to that challenge and modified what I already had used.
-Previously I used: `.reduce((prev, curr) => prev.concat(curr));`. This time I needed to run this multiple times to flatten the array completely, so I use an argument in the `concat()` method. If the current value is an array flatten the array with the same function that is already flattening the array; otherwise concat the current value to the previous value. Importantly set the `concat()` method to an inital value of an empty array `[]` as well.
+Previously I used: `.reduce((prev, curr) => prev.concat(curr));`. This time I needed to run this multiple times to flatten the array completely, so I use an argument in the `concat()` method. If the current value is an array flatten the array with the same function that is already flattening the array; otherwise concat the current value to the previous value. Importantly set the `concat()` method to an initial value of an empty array `[]` as well.
 
 ---
 
@@ -656,7 +656,7 @@ This is very interesting to see for me. I learned earlier about using `...variab
 
 ---
 
-##### Everytyhing Be True
+##### Everything Be True
 
 ```JavaScript
 // CONDENSED VERSION - NO CONSOLE OUTPUTS
@@ -677,7 +677,7 @@ It took me a while to figure out once part of this; below is an example of what 
   })}\n`);
 ```
 
-fI was trying to figure out how to compare a value to `Boolean`. The reason being, in the <em>basic algorithm challenges</em> specificaly <strong>Falsy Bouncer</strong>. From the beginning I knew that particular algorithm would have the answer for this one. I spent a while trying to do something such as `return value[pre] === Boolean` in the above example. It wasn't working, while I thought it would as in <strong>Falsy Bouncer</strong>. I also tried `return typeof (value[pre]) === 'boolean'` as I thought that could work for telling if a value was falsy/truthy or not. In the end I learned about `!!` (not not).
+fI was trying to figure out how to compare a value to `Boolean`. The reason being, in the <em>basic algorithm challenges</em> specifically <strong>Falsy Bouncer</strong>. From the beginning I knew that particular algorithm would have the answer for this one. I spent a while trying to do something such as `return value[pre] === Boolean` in the above example. It wasn't working, while I thought it would as in <strong>Falsy Bouncer</strong>. I also tried `return typeof (value[pre]) === 'boolean'` as I thought that could work for telling if a value was falsy/truthy or not. In the end I learned about `!!` (not not).
 
 I already knew about `!` (not), which I have used several times before; but then while searching for the opposite of `!` I found `!!`. This allowed me to test just `!!value[pre]` and return `true` or `false` correctly for this challenge. While `!value[pre]` would return the opposite of what I wanted to return.
 

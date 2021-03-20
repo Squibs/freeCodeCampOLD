@@ -1,15 +1,15 @@
 # My Front End Development Certification
 A Simon Says game I have created while going through the advanced front end development project challenges at https://freeCodeCamp.com
 
-## [Front End Development Projects](https://github.com/Squibs/freeCodeCamp/tree/master/Front%20End%20Development%20Certification#my-front-end-development-certificaton) (Go Back)
+## [Front End Development Projects](https://github.com/Squibs/freeCodeCampOLD/tree/master/Front%20End%20Development%20Certification#my-front-end-development-certificaton) (Go Back)
  
-<a href="https://www.freecodecamp.org/squibs/front-end-certification" target="_blank"><img src="../../Images/my-front-end-development-certificate.png" height="600" alt="Image of my Front End Development Certificaton"/></a>
+<a href="https://www.freecodecamp.org/squibs/front-end-certification" target="_blank"><img src="../../Images/my-front-end-development-certificate.png" height="600" alt="Image of my Front End Development Certification"/></a>
 
 ### [My Front End Development Certification](https://www.freecodecamp.org/squibs/front-end-certification) (Click to view functional site)
 
-<em>Recieved August 10, 2017</em>
+<em>Received August 10, 2017</em>
 
-Here it is, my <b>Front End Development Certification</b>. I have been working towards this since I started learning on freeCodeCamp. I began my journey on <em>May 3, 2017</em>; roughly 98 days later I have recieved this certification.
+Here it is, my <b>Front End Development Certification</b>. I have been working towards this since I started learning on freeCodeCamp. I began my journey on <em>May 3, 2017</em>; roughly 98 days later I have received this certification.
 
 I started out knowing only a small amount of HTML, CSS, and JavaScript. I had only really previous made <a href="http://learningtonecro.com/"><em>Learning to Necro</em></a> a website I created around the time <b>Guild Wars 2</b> came out in <em>August of 2012</em>. I can definitely see a huge improvement from where I first started.
 

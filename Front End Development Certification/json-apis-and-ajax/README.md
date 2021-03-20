@@ -1,6 +1,6 @@
 # [freeCodeCamp](https://github.com/Squibs/freeCodeCamp#freecodecamp)
 
-## [Front End Development Projects](https://github.com/Squibs/freeCodeCamp/tree/master/Front%20End%20Development%20Certification#json-apis-and-ajax) (Go Back)
+## [Front End Development Projects](https://github.com/Squibs/freeCodeCampOLD/tree/master/Front%20End%20Development%20Certification#json-apis-and-ajax) (Go Back)
 
 <img src="../../Images/screenshot-json-apis-and-ajax.png" height="400" alt="Screenshot of my JSON APIs and Ajax notes"/>
 
@@ -43,7 +43,7 @@ API - Application Programming Interfaces
 
 Json - JavaScript Object Notation
 - Object properties and their current values; between { }
-	- Refered to as key-value pairs
+	- Referred to as key-value pairs
 
 ##### Basic layout of what is being used throughout these lessons (some bootstrap classes):
 ```HTML
@@ -66,7 +66,7 @@ Json - JavaScript Object Notation
     </div>
   </div>
 
-  <div class="row text-cener">
+  <div class="row text-center">
     <div class="col-xs-12">
       <button id="getMessage" class="btn btn-primary">
         Get Message
@@ -224,11 +224,11 @@ $(document).ready(function() {
 });
 ```
 
-The HTML created with this (in the .message well div; looks like apostrophies are messed up in this example; this is only an example of the first image, the others would be here as well; they also have no formatting to them, so they are the original size... so the code would have to change to possibly correct this, or the css could do it):
+The HTML created with this (in the .message well div; looks like apostrophes are messed up in this example; this is only an example of the first image, the others would be here as well; they also have no formatting to them, so they are the original size... so the code would have to change to possibly correct this, or the css could do it):
 ```HTML
 <div class="col-xs-12 well message">
   <div class="cat">
-    <img src="https://s3.amazonaws.com/freecodecamp/funny-cat.jpg" alt="A white cat wearinga  green helmet shaped melon on it" s head. '>
+    <img src="https://s3.amazonaws.com/freecodecamp/funny-cat.jpg" alt="A white cat wearing a  green helmet shaped melon on it" s head. '>
   </div>
 </div>
 ```

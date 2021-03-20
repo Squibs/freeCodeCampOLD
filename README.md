@@ -1,4 +1,7 @@
 # freeCodeCamp
+
+**THIS IS AN OLD REPOSITORY, ONLY HERE FOR THE SAKE OF PRESERVATION: [LINK TO NEW REPOSITORY](https://github.com/Squibs/freeCodeCamp)**
+
 The solutions I have created while going through the project challenges at https://freeCodeCamp.com. Feel free to click on the images below to take you to their respective areas within this repository; see what I have created and my solutions to many of the freeCodeCamp challenges and projects.
 
 ## Navigation
@@ -18,9 +21,9 @@ The solutions I have created while going through the project challenges at https
 
 ---
 
-### [Front End Development Certification](https://github.com/Squibs/freeCodeCamp/tree/master/Front%20End%20Development%20Certification#freecodecamp)
+### [Front End Development Certification](https://github.com/Squibs/freeCodeCampOLD/tree/master/Front%20End%20Development%20Certification#freecodecamp)
 
-<a href="https://github.com/Squibs/freeCodeCamp/tree/master/Front%20End%20Development%20Certification#freecodecamp"><img src="Images/image-front-end.png" height="400" alt="Flat image of front end web design."/></a>
+<a href="https://github.com/Squibs/freeCodeCampOLD/tree/master/Front%20End%20Development%20Certification#freecodecamp"><img src="Images/image-front-end.png" height="400" alt="Flat image of front end web design."/></a>
 
 ---
 
